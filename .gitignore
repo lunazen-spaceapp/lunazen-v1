@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
+~$*
+
+# Downloaded data (scripts/fetch_data.sh)
+data/external/
+
+# Local HTML previews of the book
+docs/**/*.html
+docs/**/*_files/
+
+# Overview PDF build
+docs/learn/figdata.json
+docs/learn/*.aux
+docs/learn/*.log
+docs/learn/*.out
+docs/learn/*.toc
+
+# Site build (scripts/build_site.sh)
+public/
+
+# Local-only drafts
+docs/submission-draft.md
