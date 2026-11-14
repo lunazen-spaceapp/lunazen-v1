@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Delay impact</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="mp exp plan">
+
+  <header class="mp-head">
+    <div class="mp-kicker">
+      <p class="label accent">Plan · Delay impact</p>
+      <div class="mp-tools">
+        <button id="copy-link" class="mp-icon" type="button" data-icon aria-label="Copy link" title="Copy link"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8.5" height="8.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 3.5V3A1 1 0 0 0 9.5 2H3A1 1 0 0 0 2 3V9.5A1 1 0 0 0 3 10.5H3.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <button type="button" id="help-open" class="mp-help" aria-haspopup="dialog"><svg width="15" height="15" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.9 6.9 C6.9 5.7 7.8 4.9 9 4.9 C10.2 4.9 11.1 5.7 11.1 6.8 C11.1 8.3 9 8.4 9 10.2 M9 12.8 V13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>How to use Delay impact</button>
+      </div>
+    </div>
+    <h1>Launch delay sensitivity · Single spot</h1>
+    <p class="mp-sub">Evaluate mission viability across launch slips: target date status, window duration, next available opportunity, and backup landing spots.</p>
+  </header>
+
+  <section class="exp-scenario lz-query" aria-label="The question">
+    <p class="lz-sentence" id="sentence"></p>
+    <nav class="lz-trail" id="trail" aria-label="Query history"></nav>
+  </section>
+
+  <div id="verdict" class="lz-verdict-slot"></div>
+  <div id="answers"></div>
+  <p id="story" class="pl-foot lz-story" aria-live="polite"></p>
+  <p id="date-note" class="pl-note" role="status" hidden></p>
+
+  <section id="results" class="results-wrap" aria-label="Results">
+    <div id="all-note" class="win-note" hidden></div>
+
+    <section class="pl-panel" id="hero-card">
+      <div class="pl-panel-head">
+        <h2 class="exp-h">Valid spots per landing day</h2>
+        <p class="win-actions" id="all-actions">
+          <button id="play" type="button" class="exp-btn small" title="Move the day forward, one day at a time">Play</button>
+          <button id="best" type="button" class="exp-btn small" title="The day when most spots are valid">Best day</button>
+        </p>
+      </div>
+      <div class="winchart"><canvas id="hero" tabindex="0" aria-label="How many spots are valid for a landing on each day of the year. Arrow keys move the chosen day."></canvas></div>
+      <p class="pl-foot">Click or drag to select a touchdown day. Peaks recur about monthly as solar illumination (≈29.5-day cycle) and Earth line-of-sight (≈27-day libration cycle) realign with the local terrain.</p>
+    </section>
+
+    <section class="pl-panel" id="slip-card">
+      <div class="pl-panel-head">
+        <h2 class="exp-h" id="slip-title">Backup spots</h2>
+        <button id="slip-more" type="button" class="exp-btn small" aria-expanded="false">Show every spot</button>
+      </div>
+      <div class="pl-table-scroll"><table id="slip" class="pl-table"></table></div>
+      <div class="win-key" id="slip-key"></div>
+      <p class="pl-foot" id="look-further" hidden></p>
+    </section>
+
+    <section class="exp-snap" id="grid-details" data-row="grid">
+      <button type="button" class="exp-snap-head" aria-controls="pane-all"><span class="t">Annual validity matrix</span><span class="s" id="grid-sub"></span></button>
+      <div id="pane-all" class="exp-snap-body" hidden>
+        <div class="winchart"><canvas id="chart" tabindex="0" aria-label="For every spot and every landing day of the year, whether the mission is valid"></canvas></div>
+        <div class="win-key" id="key"></div>
+      </div>
+    </section>
+
+    <p id="status" class="pl-foot" role="status"></p>
+
+    <section class="na" aria-label="Next actions">
+      <h2 class="exp-h">Next actions</h2>
+      <div class="na-btns">
+        <a class="exp-btn" id="planner-link" href="planner.html">Open in Planner</a>
+        <a class="exp-btn" id="rank-link" href="rank.html">Rank spots</a>
+      </div>
+    </section>
+  </section>
+
+  <div id="pop" class="lz-pop" hidden role="dialog" aria-label="Edit the question"></div>
+
+  <div id="tip" class="win-tip" role="tooltip"></div>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/windows.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>
