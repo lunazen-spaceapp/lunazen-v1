@@ -1,0 +1,1367 @@
+{
+ "generated": "2026-11-02",
+ "jpl": {
+  "source": "JPL Horizons airless apparent az/el, 2024-2030 every 37 days",
+  "rows": [
+   {
+    "site": "near_pole",
+    "latitudeDeg": -89.34117,
+    "longitudeDeg": 202.982118,
+    "target": "sun",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.0004199683502409052,
+    "maxElevationArcsec": 0.0003974919553506595
+   },
+   {
+    "site": "near_pole",
+    "latitudeDeg": -89.34117,
+    "longitudeDeg": 202.982118,
+    "target": "earth",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.09645784024029194,
+    "maxElevationArcsec": 0.09644923096465696
+   },
+   {
+    "site": "malapert",
+    "latitudeDeg": -86.0,
+    "longitudeDeg": 0.0,
+    "target": "sun",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.00041836827846539757,
+    "maxElevationArcsec": 0.00039394431876615954
+   },
+   {
+    "site": "malapert",
+    "latitudeDeg": -86.0,
+    "longitudeDeg": 0.0,
+    "target": "earth",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.09632214598530985,
+    "maxElevationArcsec": 0.09630506045112952
+   },
+   {
+    "site": "blue_ghost_1",
+    "latitudeDeg": 18.5622,
+    "longitudeDeg": 61.8104,
+    "target": "sun",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.0032389555600664858,
+    "maxElevationArcsec": 0.0023771458529608935
+   },
+   {
+    "site": "blue_ghost_1",
+    "latitudeDeg": 18.5622,
+    "longitudeDeg": 61.8104,
+    "target": "earth",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.09269809075449366,
+    "maxElevationArcsec": 0.09269200859023385
+   },
+   {
+    "site": "farside_equator",
+    "latitudeDeg": 0.0,
+    "longitudeDeg": 180.0,
+    "target": "sun",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.003603879473673082,
+    "maxElevationArcsec": 0.0036035100151821098
+   },
+   {
+    "site": "farside_equator",
+    "latitudeDeg": 0.0,
+    "longitudeDeg": 180.0,
+    "target": "earth",
+    "epochs": 70,
+    "maxSeparationArcsec": 0.019881482398370957,
+    "maxElevationArcsec": 0.01963562189644108
+   }
+  ]
+ },
+ "illumination": {
+  "gentleSlopeWorstPp": {
+   "sun": 2.0141821527138917,
+   "earth": 3.0888868445262228
+  },
+  "source": "LOLA AVGVISIB 60 m maps (Mazarico et al. 2011), 18.6 years; our run at the pixel centre, ground level, terrain from 60 m",
+  "years": 18.6,
+  "points": 26,
+  "latitudeRangeDeg": [
+   -89.4,
+   -85.1
+  ],
+  "sun": {
+   "n": 26,
+   "r": 0.9968926059910529,
+   "meanPp": -0.7091118816785819,
+   "rmsPp": 1.6358112046174003,
+   "maxAbsPp": 4.570369825206999
+  },
+  "earth": {
+   "n": 26,
+   "r": 0.9917445231738137,
+   "meanPp": -1.2295323756280536,
+   "rmsPp": 3.104091882829326,
+   "maxAbsPp": 13.365420423183078
+  },
+  "scatter": [
+   [
+    0.0157,
+    0.0145,
+    0.0,
+    0.0,
+    20.6
+   ],
+   [
+    0.0257,
+    0.0055,
+    0.4725,
+    0.4461,
+    1.0
+   ],
+   [
+    0.0542,
+    0.0685,
+    0.1676,
+    0.1661,
+    12.0
+   ],
+   [
+    0.0866,
+    0.0825,
+    0.2088,
+    0.0751,
+    12.6
+   ],
+   [
+    0.1194,
+    0.1165,
+    0.4027,
+    0.4035,
+    15.5
+   ],
+   [
+    0.1361,
+    0.1003,
+    0.3864,
+    0.3705,
+    8.1
+   ],
+   [
+    0.1688,
+    0.1636,
+    0.197,
+    0.1966,
+    3.0
+   ],
+   [
+    0.1858,
+    0.182,
+    0.3048,
+    0.299,
+    10.5
+   ],
+   [
+    0.2075,
+    0.1869,
+    0.1596,
+    0.158,
+    5.1
+   ],
+   [
+    0.2442,
+    0.2403,
+    0.0,
+    0.0,
+    19.3
+   ],
+   [
+    0.269,
+    0.261,
+    0.0,
+    0.0,
+    15.1
+   ],
+   [
+    0.2848,
+    0.2746,
+    0.0,
+    0.0,
+    8.3
+   ],
+   [
+    0.3194,
+    0.3125,
+    0.1064,
+    0.0737,
+    14.4
+   ],
+   [
+    0.3269,
+    0.3196,
+    0.0,
+    0.0,
+    3.6
+   ],
+   [
+    0.3683,
+    0.3733,
+    0.0,
+    0.0,
+    15.1
+   ],
+   [
+    0.3867,
+    0.3833,
+    0.0,
+    0.0,
+    19.4
+   ],
+   [
+    0.4131,
+    0.4289,
+    0.0,
+    0.0,
+    14.0
+   ],
+   [
+    0.4468,
+    0.4432,
+    0.0,
+    0.0,
+    7.3
+   ],
+   [
+    0.4685,
+    0.466,
+    0.72,
+    0.7213,
+    2.9
+   ],
+   [
+    0.4762,
+    0.4612,
+    0.0574,
+    0.0504,
+    3.6
+   ],
+   [
+    0.5108,
+    0.5057,
+    0.3526,
+    0.3217,
+    3.6
+   ],
+   [
+    0.5299,
+    0.5525,
+    0.599,
+    0.6026,
+    4.0
+   ],
+   [
+    0.5582,
+    0.5125,
+    0.1452,
+    0.0814,
+    5.8
+   ],
+   [
+    0.5755,
+    0.5757,
+    0.0925,
+    0.0867,
+    2.3
+   ],
+   [
+    0.618,
+    0.5845,
+    0.5697,
+    0.5711,
+    5.1
+   ],
+   [
+    0.6356,
+    0.6322,
+    0.538,
+    0.5368,
+    18.0
+   ]
+  ]
+ },
+ "spots": {
+  "source": "NASA 18.6-year 60 m map at the spot vs our 2027 year with a 2 m mast",
+  "sun": {
+   "n": 67,
+   "r": 0.9573107731643069,
+   "meanPp": 3.2755223880597018,
+   "rmsPp": 4.444227515435639,
+   "maxAbsPp": 11.250000000000004
+  },
+  "earth": {
+   "n": 67,
+   "r": 0.9628770185543409,
+   "meanPp": 0.3308955223880598,
+   "rmsPp": 3.559436690297891,
+   "maxAbsPp": 12.430000000000007
+  },
+  "scatter": [
+   [
+    "Site01-1",
+    0.8844,
+    0.8969,
+    0.5808,
+    0.5519
+   ],
+   [
+    "Site01-2",
+    0.8642,
+    0.9077,
+    0.5794,
+    0.5529
+   ],
+   [
+    "Site01-3",
+    0.8313,
+    0.8618,
+    0.5814,
+    0.5525
+   ],
+   [
+    "Site01-4",
+    0.8013,
+    0.8617,
+    0.5766,
+    0.5507
+   ],
+   [
+    "Site01-5",
+    0.7547,
+    0.834,
+    0.5247,
+    0.5477
+   ],
+   [
+    "Site04-1",
+    0.8706,
+    0.8626,
+    0.5375,
+    0.5038
+   ],
+   [
+    "Site04-2",
+    0.8546,
+    0.867,
+    0.5668,
+    0.5403
+   ],
+   [
+    "Site04-3",
+    0.8164,
+    0.8071,
+    0.483,
+    0.4689
+   ],
+   [
+    "Site04-4",
+    0.7885,
+    0.7702,
+    0.566,
+    0.5397
+   ],
+   [
+    "Site04-5",
+    0.7862,
+    0.7875,
+    0.4202,
+    0.4056
+   ],
+   [
+    "Site06-1",
+    0.8315,
+    0.8767,
+    0.5988,
+    0.65
+   ],
+   [
+    "Site06-2",
+    0.7724,
+    0.7931,
+    0.6254,
+    0.6404
+   ],
+   [
+    "Site06-3",
+    0.7376,
+    0.82,
+    0.5753,
+    0.5663
+   ],
+   [
+    "Site06-4",
+    0.6968,
+    0.8093,
+    0.5948,
+    0.6694
+   ],
+   [
+    "Site06-5",
+    0.6828,
+    0.7863,
+    0.628,
+    0.6969
+   ],
+   [
+    "Site07-1",
+    0.8596,
+    0.879,
+    0.5645,
+    0.5715
+   ],
+   [
+    "Site07-2",
+    0.725,
+    0.7723,
+    0.5636,
+    0.5855
+   ],
+   [
+    "Site07-3",
+    0.6652,
+    0.6818,
+    0.5306,
+    0.5179
+   ],
+   [
+    "Site07-4",
+    0.6584,
+    0.731,
+    0.5379,
+    0.5387
+   ],
+   [
+    "Site07-5",
+    0.6521,
+    0.672,
+    0.5042,
+    0.4965
+   ],
+   [
+    "Site11-1",
+    0.8269,
+    0.8476,
+    0.6142,
+    0.5984
+   ],
+   [
+    "Site11-2",
+    0.7734,
+    0.8045,
+    0.5535,
+    0.5791
+   ],
+   [
+    "Site11-3",
+    0.7471,
+    0.8378,
+    0.5804,
+    0.5922
+   ],
+   [
+    "Site11-4",
+    0.7267,
+    0.7583,
+    0.613,
+    0.5992
+   ],
+   [
+    "Site11-5",
+    0.7015,
+    0.7723,
+    0.614,
+    0.5927
+   ],
+   [
+    "Site20-1",
+    0.7473,
+    0.7867,
+    0.5681,
+    0.5815
+   ],
+   [
+    "Site20-2",
+    0.7412,
+    0.7605,
+    0.6701,
+    0.6569
+   ],
+   [
+    "Site20-3",
+    0.7404,
+    0.8225,
+    0.5947,
+    0.6213
+   ],
+   [
+    "Site20-4",
+    0.7383,
+    0.7641,
+    0.6073,
+    0.6244
+   ],
+   [
+    "Site20-5",
+    0.7308,
+    0.7421,
+    0.613,
+    0.6036
+   ],
+   [
+    "Site20-6",
+    0.6758,
+    0.6829,
+    0.8062,
+    0.8324
+   ],
+   [
+    "Site23-1",
+    0.8189,
+    0.8476,
+    0.587,
+    0.5916
+   ],
+   [
+    "Site23-2",
+    0.8127,
+    0.8385,
+    0.6332,
+    0.6781
+   ],
+   [
+    "Site23-3",
+    0.7988,
+    0.8203,
+    0.6623,
+    0.6975
+   ],
+   [
+    "Site23-4",
+    0.7956,
+    0.7849,
+    0.5929,
+    0.5763
+   ],
+   [
+    "Site23-5",
+    0.7762,
+    0.8578,
+    0.5974,
+    0.6845
+   ],
+   [
+    "Site42-1",
+    0.7855,
+    0.8256,
+    0.5748,
+    0.5698
+   ],
+   [
+    "Site42-2",
+    0.7462,
+    0.7544,
+    0.5858,
+    0.5676
+   ],
+   [
+    "Site42-3",
+    0.7386,
+    0.7912,
+    0.5947,
+    0.5671
+   ],
+   [
+    "Site42-4",
+    0.7285,
+    0.7321,
+    0.587,
+    0.5629
+   ],
+   [
+    "Site42-5",
+    0.7005,
+    0.7661,
+    0.5964,
+    0.5665
+   ],
+   [
+    "Haworth-1",
+    0.7049,
+    0.7495,
+    0.601,
+    0.639
+   ],
+   [
+    "Haworth-2",
+    0.6622,
+    0.697,
+    0.5987,
+    0.6094
+   ],
+   [
+    "Haworth-3",
+    0.6205,
+    0.697,
+    0.5982,
+    0.5979
+   ],
+   [
+    "Haworth-4",
+    0.61,
+    0.639,
+    0.656,
+    0.6583
+   ],
+   [
+    "Haworth-5",
+    0.608,
+    0.6427,
+    0.588,
+    0.5971
+   ],
+   [
+    "DM2-1",
+    0.527,
+    0.5251,
+    0.6283,
+    0.642
+   ],
+   [
+    "DM2-2",
+    0.5266,
+    0.5213,
+    0.6846,
+    0.7132
+   ],
+   [
+    "DM2-3",
+    0.5206,
+    0.5146,
+    0.7816,
+    0.8581
+   ],
+   [
+    "DM2-4",
+    0.5006,
+    0.4966,
+    0.8581,
+    0.9824
+   ],
+   [
+    "DM2-5",
+    0.4948,
+    0.4884,
+    0.8564,
+    0.9805
+   ],
+   [
+    "SL2-1",
+    0.7514,
+    0.8033,
+    0.602,
+    0.5801
+   ],
+   [
+    "SL2-2",
+    0.7247,
+    0.74,
+    0.6102,
+    0.5805
+   ],
+   [
+    "SL2-3",
+    0.7191,
+    0.7577,
+    0.6179,
+    0.5797
+   ],
+   [
+    "SL2-4",
+    0.6704,
+    0.7011,
+    0.6032,
+    0.5794
+   ],
+   [
+    "SL2-5",
+    0.6244,
+    0.6365,
+    0.5898,
+    0.5723
+   ],
+   [
+    "SL3-1",
+    0.7802,
+    0.8197,
+    0.5495,
+    0.5322
+   ],
+   [
+    "SL3-2",
+    0.7236,
+    0.812,
+    0.5918,
+    0.583
+   ],
+   [
+    "SL3-3",
+    0.704,
+    0.7606,
+    0.5854,
+    0.5881
+   ],
+   [
+    "SL3-4",
+    0.6317,
+    0.6636,
+    0.5456,
+    0.5329
+   ],
+   [
+    "SL3-5",
+    0.6171,
+    0.6309,
+    0.5116,
+    0.5071
+   ],
+   [
+    "LM7-1",
+    0.6592,
+    0.6936,
+    0.5136,
+    0.4892
+   ],
+   [
+    "LM7-2",
+    0.6326,
+    0.6367,
+    0.5106,
+    0.4865
+   ],
+   [
+    "LM7-3",
+    0.6031,
+    0.6249,
+    0.5105,
+    0.4886
+   ],
+   [
+    "LM7-4",
+    0.6009,
+    0.6124,
+    0.5071,
+    0.4842
+   ],
+   [
+    "LM7-5",
+    0.593,
+    0.5986,
+    0.5083,
+    0.487
+   ],
+   [
+    "LM7-6",
+    0.518,
+    0.5691,
+    0.5147,
+    0.4905
+   ]
+  ]
+ },
+ "barker2021": {
+  "period": [
+   "2024-01-01T00:00:00",
+   "2026-01-01T00:00:00"
+  ],
+  "spacing_m": 10.0,
+  "summary": {
+   "ours_1m_range": [
+    73.29918968779134,
+    78.91736356660807
+   ],
+   "ours_5m_range": [
+    82.90998248991274,
+    90.33229549834473
+   ],
+   "ours_minus_fig19_1m_pp": [
+    0.2991896877913405,
+    1.4360078632152096
+   ],
+   "nominal_1m_fig19_approx": [
+    73.0,
+    78.0
+   ],
+   "nominal_1m_fig19_by_roi": [
+    76.0,
+    76.0,
+    73.0,
+    77.5,
+    75.5,
+    77.5,
+    73.5
+   ],
+   "clone_p1_1m_table2": [
+    67.0,
+    71.0
+   ],
+   "clone_p1_5m_table2": [
+    83.0,
+    89.0
+   ]
+  },
+  "rois": [
+   {
+    "roi": 1,
+    "centroid_m": [
+     -11589.932432432432,
+     -12466.351351351352
+    ],
+    "points": 72,
+    "1m": {
+     "average_illumination_pct": 77.34179342923106,
+     "lcip_days_mean": 157.55381944444446,
+     "lcsp_days_mean": 13.34259259259259
+    },
+    "5m": {
+     "average_illumination_pct": 90.33229549834473,
+     "lcip_days_mean": 226.84548611111111,
+     "lcsp_days_mean": 4.561921296296297
+    }
+   },
+   {
+    "roi": 2,
+    "centroid_m": [
+     -11487.191358024691,
+     -12556.75925925926
+    ],
+    "points": 54,
+    "1m": {
+     "average_illumination_pct": 77.43600786321521,
+     "lcip_days_mean": 171.19753086419755,
+     "lcsp_days_mean": 13.478395061728396
+    },
+    "5m": {
+     "average_illumination_pct": 89.16018702327094,
+     "lcip_days_mean": 222.6604938271605,
+     "lcsp_days_mean": 6.6111111111111125
+    }
+   },
+   {
+    "roi": 3,
+    "centroid_m": [
+     -11352.777777777777,
+     -12503.981481481482
+    ],
+    "points": 29,
+    "1m": {
+     "average_illumination_pct": 73.29918968779134,
+     "lcip_days_mean": 170.42672413793105,
+     "lcsp_days_mean": 16.617816091954023
+    },
+    "5m": {
+     "average_illumination_pct": 86.36428962730572,
+     "lcip_days_mean": 232.45545977011497,
+     "lcsp_days_mean": 6.232758620689654
+    }
+   },
+   {
+    "roi": 4,
+    "centroid_m": [
+     -11286.644144144144,
+     -12166.5990990991
+    ],
+    "points": 106,
+    "1m": {
+     "average_illumination_pct": 78.91736356660807,
+     "lcip_days_mean": 201.41470125786165,
+     "lcsp_days_mean": 9.25314465408805
+    },
+    "5m": {
+     "average_illumination_pct": 88.70956090402318,
+     "lcip_days_mean": 232.5279088050314,
+     "lcsp_days_mean": 3.848663522012578
+    }
+   },
+   {
+    "roi": 5,
+    "centroid_m": [
+     -11101.059322033898,
+     -11945.466101694916
+    ],
+    "points": 76,
+    "1m": {
+     "average_illumination_pct": 76.75554605594549,
+     "lcip_days_mean": 173.83826754385964,
+     "lcsp_days_mean": 7.989035087719299
+    },
+    "5m": {
+     "average_illumination_pct": 86.34418192315518,
+     "lcip_days_mean": 220.52302631578948,
+     "lcsp_days_mean": 4.202302631578947
+    }
+   },
+   {
+    "roi": 6,
+    "centroid_m": [
+     -10798.247126436781,
+     -11735.316091954022
+    ],
+    "points": 83,
+    "1m": {
+     "average_illumination_pct": 78.70609874220612,
+     "lcip_days_mean": 184.6129518072289,
+     "lcsp_days_mean": 9.06475903614458
+    },
+    "5m": {
+     "average_illumination_pct": 87.57599950807172,
+     "lcip_days_mean": 221.32028112449797,
+     "lcsp_days_mean": 3.904116465863454
+    }
+   },
+   {
+    "roi": 7,
+    "centroid_m": [
+     -10227.378048780487,
+     -11557.987804878048
+    ],
+    "points": 55,
+    "1m": {
+     "average_illumination_pct": 74.00210243496618,
+     "lcip_days_mean": 116.8810606060606,
+     "lcsp_days_mean": 9.770454545454545
+    },
+    "5m": {
+     "average_illumination_pct": 82.90998248991274,
+     "lcip_days_mean": 144.83106060606062,
+     "lcsp_days_mean": 5.320454545454545
+    }
+   }
+  ]
+ },
+ "missions": {
+  "blueGhost1": {
+   "events": {
+    "landingPlus346h": "2025-03-16T18:34:00",
+    "terrain_sunset_begins": "2025-03-16T18:20:50",
+    "sun_centre_behind_terrain": "2025-03-16T18:54:40",
+    "terrain_sunset_complete": "2025-03-16T19:28:30",
+    "flat_horizon_sunset_complete": "2025-03-16T20:44:10",
+    "finalTransmission": "2025-03-16T23:15:00",
+    "nasaSunsetImplied": "2025-03-16T18:15:00"
+   },
+   "sunAbove": {
+    "elevation_deg": 0.7729038091259254,
+    "margin_above_terrain_deg": 0.16081918547048835
+   },
+   "terrainToSunset": {
+    "horizon_deg": 0.612084623655437,
+    "distance_km": 0.800000011920929
+   }
+  },
+  "im1": {
+   "groundM": 2594.430330344012,
+   "lrocM": 2579.0,
+   "firstSunset": "2024-03-02T18:19:13",
+   "sunMaxDeg": {
+    "2024-02-26": 10.3994344089179,
+    "2024-02-29": 6.610648719775656
+   },
+   "ended": "2024-02-29 (date only; sun low on the horizon)"
+  }
+ },
+ "awayFromPole": {
+  "site": "Blue Ghost 1 (Mare Crisium)",
+  "reference": "SLDEM2015 window ahead of the global map",
+  "horizon_rms_deg": 1.1681448671100496,
+  "horizon_max_abs_deg": 3.23,
+  "first_sunset_global_utc": "2025-03-16T20:24:00",
+  "first_sunset_fine_utc": "2025-03-16T19:29:00",
+  "sunset_error_h": 0.9166666666666666
+ },
+ "customPoints": {
+  "spots": 67,
+  "horizon_rms_deg": 0.11860290200616887,
+  "sun_share_pp": {
+   "median": 0.3053652968036502,
+   "p90": 1.460045662100455,
+   "max": 2.6170091324200895
+  },
+  "longest_dark_h": {
+   "median": 0.75,
+   "p90": 11.6,
+   "max": 226.25
+  }
+ },
+ "apollo": {
+  "source": "https://apollojournals.org/alsj/alsj-sunangles.html",
+  "missions": [
+   "Apollo 11",
+   "Apollo 12",
+   "Apollo 14"
+  ],
+  "points": 10,
+  "maxAbsDeg": 0.118,
+  "rmsDeg": 0.06553472362038311,
+  "meanDeg": -0.034199999999999994,
+  "timeScaleCheckHours": {
+   "Apollo 11": 0.011,
+   "Apollo 12": 0.043,
+   "Apollo 14": 0.003,
+   "Apollo 15": 0.042,
+   "Apollo 16": 0.007,
+   "Apollo 17": 0.033
+  },
+  "rows": [
+   {
+    "mission": "Apollo 11",
+    "event": "EVA-1 start",
+    "getHours": 109.0,
+    "utc": "1969-07-21T02:32:00",
+    "sourceDeg": 14.0,
+    "oursDeg": 13.882,
+    "differenceDeg": -0.118,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 11",
+    "event": "EVA-1 end",
+    "getHours": 111.75,
+    "utc": "1969-07-21T05:17:00",
+    "sourceDeg": 15.4,
+    "oursDeg": 15.282,
+    "differenceDeg": -0.118,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 12",
+    "event": "EVA-1 start",
+    "getHours": 115.25,
+    "utc": "1969-11-19T11:37:00",
+    "sourceDeg": 7.5,
+    "oursDeg": 7.528,
+    "differenceDeg": 0.028,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 12",
+    "event": "EVA-1 end",
+    "getHours": 119.25,
+    "utc": "1969-11-19T15:37:00",
+    "sourceDeg": 9.5,
+    "oursDeg": 9.55,
+    "differenceDeg": 0.05,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 12",
+    "event": "EVA-2 start",
+    "getHours": 131.5,
+    "utc": "1969-11-20T03:52:00",
+    "sourceDeg": 15.8,
+    "oursDeg": 15.741,
+    "differenceDeg": -0.059,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 12",
+    "event": "EVA-2 end",
+    "getHours": 135.5,
+    "utc": "1969-11-20T07:52:00",
+    "sourceDeg": 17.8,
+    "oursDeg": 17.762,
+    "differenceDeg": -0.038,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 14",
+    "event": "EVA-1 start",
+    "getHours": 113.5,
+    "utc": "1971-02-05T14:33:02",
+    "sourceDeg": 13.0,
+    "oursDeg": 12.999,
+    "differenceDeg": -0.001,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 14",
+    "event": "EVA-1 end",
+    "getHours": 118.5,
+    "utc": "1971-02-05T19:33:02",
+    "sourceDeg": 15.5,
+    "oursDeg": 15.523,
+    "differenceDeg": 0.023,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 14",
+    "event": "EVA-2 start",
+    "getHours": 131.25,
+    "utc": "1971-02-06T08:18:02",
+    "sourceDeg": 22.0,
+    "oursDeg": 21.96,
+    "differenceDeg": -0.04,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 14",
+    "event": "EVA-2 end",
+    "getHours": 135.75,
+    "utc": "1971-02-06T12:48:02",
+    "sourceDeg": 24.3,
+    "oursDeg": 24.231,
+    "differenceDeg": -0.069,
+    "comparable": true
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-1 start",
+    "getHours": 119.75,
+    "utc": "1971-07-31T13:19:00",
+    "sourceDeg": 19.6,
+    "oursDeg": 18.831,
+    "differenceDeg": -0.769,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-1 end",
+    "getHours": 126.25,
+    "utc": "1971-07-31T19:49:00",
+    "sourceDeg": 22.9,
+    "oursDeg": 21.751,
+    "differenceDeg": -1.149,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-2 start",
+    "getHours": 142.25,
+    "utc": "1971-08-01T11:49:00",
+    "sourceDeg": 31.0,
+    "oursDeg": 28.857,
+    "differenceDeg": -2.143,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-2 end",
+    "getHours": 149.5,
+    "utc": "1971-08-01T19:04:00",
+    "sourceDeg": 34.7,
+    "oursDeg": 32.027,
+    "differenceDeg": -2.673,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-3 start",
+    "getHours": 163.25,
+    "utc": "1971-08-02T08:49:00",
+    "sourceDeg": 41.7,
+    "oursDeg": 37.922,
+    "differenceDeg": -3.778,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 15",
+    "event": "EVA-3 end",
+    "getHours": 168.25,
+    "utc": "1971-08-02T13:49:00",
+    "sourceDeg": 44.3,
+    "oursDeg": 40.018,
+    "differenceDeg": -4.282,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-1 start",
+    "getHours": 119.0,
+    "utc": "1972-04-21T16:54:00",
+    "sourceDeg": 22.2,
+    "oursDeg": 22.018,
+    "differenceDeg": -0.182,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-1 end",
+    "getHours": 126.0,
+    "utc": "1972-04-21T23:54:00",
+    "sourceDeg": 25.7,
+    "oursDeg": 25.513,
+    "differenceDeg": -0.187,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-2 start",
+    "getHours": 142.5,
+    "utc": "1972-04-22T16:24:00",
+    "sourceDeg": 34.1,
+    "oursDeg": 33.729,
+    "differenceDeg": -0.371,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-2 end",
+    "getHours": 150.0,
+    "utc": "1972-04-22T23:54:00",
+    "sourceDeg": 37.9,
+    "oursDeg": 37.451,
+    "differenceDeg": -0.449,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-3 start",
+    "getHours": 165.5,
+    "utc": "1972-04-23T15:24:00",
+    "sourceDeg": 45.8,
+    "oursDeg": 45.102,
+    "differenceDeg": -0.698,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 16",
+    "event": "EVA-3 end",
+    "getHours": 171.25,
+    "utc": "1972-04-23T21:09:00",
+    "sourceDeg": 48.7,
+    "oursDeg": 47.923,
+    "differenceDeg": -0.777,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-1 start",
+    "getHours": 117.0,
+    "utc": "1972-12-11T23:53:00",
+    "sourceDeg": 15.3,
+    "oursDeg": 15.229,
+    "differenceDeg": -0.071,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-1 end",
+    "getHours": 124.25,
+    "utc": "1972-12-12T07:08:00",
+    "sourceDeg": 19.0,
+    "oursDeg": 18.654,
+    "differenceDeg": -0.346,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-2 start",
+    "getHours": 140.5,
+    "utc": "1972-12-12T23:23:00",
+    "sourceDeg": 27.3,
+    "oursDeg": 26.281,
+    "differenceDeg": -1.019,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-2 end",
+    "getHours": 148.25,
+    "utc": "1972-12-13T07:08:00",
+    "sourceDeg": 31.2,
+    "oursDeg": 29.887,
+    "differenceDeg": -1.313,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-3 start",
+    "getHours": 163.5,
+    "utc": "1972-12-13T22:23:00",
+    "sourceDeg": 39.0,
+    "oursDeg": 36.897,
+    "differenceDeg": -2.103,
+    "comparable": false
+   },
+   {
+    "mission": "Apollo 17",
+    "event": "EVA-3 end",
+    "getHours": 170.75,
+    "utc": "1972-12-14T05:38:00",
+    "sourceDeg": 42.6,
+    "oursDeg": 40.178,
+    "differenceDeg": -2.422,
+    "comparable": false
+   }
+  ]
+ },
+ "figures": [
+  "figures/missions.png",
+  "figures/dem_crosscheck.png"
+ ],
+ "scorecard": [
+  {
+   "id": "jpl",
+   "check": "Sun and Earth directions",
+   "against": "JPL Horizons, 4 sites, 70 dates each",
+   "result": "0.10\u2033 at worst",
+   "tolerance": "1\u2033",
+   "verdict": "pass"
+  },
+  {
+   "id": "illumination",
+   "check": "Long-term illumination",
+   "against": "NASA's LOLA average-visibility maps, the 6 flattest of 26 points",
+   "result": "Sun 2.0 pp, Earth 3.1 pp at worst",
+   "tolerance": "3 and 5 pp",
+   "verdict": "pass"
+  },
+  {
+   "id": "barker",
+   "check": "Seven Connecting Ridge regions",
+   "against": "Barker et al. (2021), at 1 m",
+   "result": "+0.3 to +1.4 pp",
+   "tolerance": "\u00b12 pp",
+   "verdict": "pass"
+  },
+  {
+   "id": "apollo",
+   "check": "Sun angle on the Moon in 1969-71",
+   "against": "Apollo Lunar Surface Journal, 10 moonwalk times at Apollo 11, 12 and 14",
+   "result": "0.12\u00b0 at worst",
+   "tolerance": "0.25\u00b0",
+   "verdict": "pass"
+  },
+  {
+   "id": "spots",
+   "check": "All 67 candidate spots",
+   "against": "NASA's 18.6-year map at the same pixel",
+   "result": "r = 0.96, RMS 4.4 pp",
+   "tolerance": "none: a 2 m mast and one year against a ground average",
+   "verdict": "reported"
+  },
+  {
+   "id": "missions",
+   "check": "Two real landings",
+   "against": "IM-1's measured height; NASA's account of Blue Ghost 1's sunset",
+   "result": "15 m; 6 min",
+   "tolerance": "none: NASA gives an implied time, not a measurement",
+   "verdict": "reported"
+  },
+  {
+   "id": "browser",
+   "check": "Browser engine",
+   "against": "The Python reference (fixtures; every spot, live below)",
+   "result": "tested on every run of npm test",
+   "tolerance": "0.1\u2033 and 0.1 pp",
+   "verdict": "pass"
+  }
+ ]
+}

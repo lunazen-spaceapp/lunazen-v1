@@ -1,0 +1,166 @@
+{
+ "extentM": {
+  "x0": -150000.0,
+  "x1": 150000.0,
+  "y0": -150000.0,
+  "y1": 150000.0
+ },
+ "size": 500,
+ "pixelM": 600.0,
+ "layers": {
+  "sun": "map_sun.webp",
+  "earth": "map_earth.webp"
+ },
+ "values": {
+  "file": "map_values.bin",
+  "dtype": "uint8",
+  "order": "row (north to south), col (west to east), [sun %, earth %]",
+  "noData": 255,
+  "meaning": "brightest 60 m pixel within each 600 m cell"
+ },
+ "image": {
+  "extentM": {
+   "x0": -330000.0,
+   "x1": 330000.0,
+   "y0": -330000.0,
+   "y1": 330000.0
+  },
+  "size": 1100,
+  "meaning": "the pictures cover this square; NASA's illumination data only the central extentM"
+ },
+ "colormap": "viridis",
+ "legend": [
+  [
+   0.0,
+   "#440154"
+  ],
+  [
+   0.2,
+   "#404387"
+  ],
+  [
+   0.4,
+   "#29788e"
+  ],
+  [
+   0.6,
+   "#22a784"
+  ],
+  [
+   0.8,
+   "#79d151"
+  ],
+  [
+   1.0,
+   "#fde724"
+  ]
+ ],
+ "edgeLatitudeDeg": -85.05638630507268,
+ "tiles": [
+  {
+   "id": "Site01",
+   "name": "Connecting ridge",
+   "x0M": -19000.0,
+   "x1M": -3000.0,
+   "y0M": -20000.0,
+   "y1M": -4000.0
+  },
+  {
+   "id": "Site04",
+   "name": "Shackleton rim",
+   "x0M": -9000.0,
+   "x1M": 7000.0,
+   "y0M": -15000.0,
+   "y1M": 1000.0
+  },
+  {
+   "id": "Site06",
+   "name": "Nobile rim 1",
+   "x0M": 74000.0,
+   "x1M": 94000.0,
+   "y0M": 100000.0,
+   "y1M": 120000.0
+  },
+  {
+   "id": "Site07",
+   "name": "Peak near Shackleton",
+   "x0M": 22000.0,
+   "x1M": 38000.0,
+   "y0M": -28000.0,
+   "y1M": -12000.0
+  },
+  {
+   "id": "Site11",
+   "name": "de Gerlache rim",
+   "x0M": -45000.0,
+   "x1M": -29000.0,
+   "y0M": 7000.0,
+   "y1M": 23000.0
+  },
+  {
+   "id": "Site20",
+   "name": "Leibnitz beta plateau",
+   "x0M": 65000.0,
+   "x1M": 81000.0,
+   "y0M": 110000.0,
+   "y1M": 126000.0
+  },
+  {
+   "id": "Site23",
+   "name": "Malapert massif",
+   "x0M": -11000.0,
+   "x1M": 10000.0,
+   "y0M": 111000.0,
+   "y1M": 132000.0
+  },
+  {
+   "id": "Site42",
+   "name": "de Gerlache-Kocher massif",
+   "x0M": -123400.0,
+   "x1M": -103400.0,
+   "y0M": -66100.0,
+   "y1M": -46100.0
+  },
+  {
+   "id": "Haworth",
+   "name": "Haworth",
+   "x0M": -52900.0,
+   "x1M": -23100.0,
+   "y0M": 75600.0,
+   "y1M": 105400.0
+  },
+  {
+   "id": "DM2",
+   "name": "Nobile rim 2",
+   "x0M": 147000.0,
+   "x1M": 167000.0,
+   "y0M": 85000.0,
+   "y1M": 105000.0
+  },
+  {
+   "id": "SL2",
+   "name": "de Gerlache rim 2",
+   "x0M": -58500.0,
+   "x1M": -38500.0,
+   "y0M": 13000.0,
+   "y1M": 33000.0
+  },
+  {
+   "id": "SL3",
+   "name": "Connecting ridge extension",
+   "x0M": -38700.0,
+   "x1M": -18700.0,
+   "y0M": -16100.0,
+   "y1M": 3900.0
+  },
+  {
+   "id": "LM7",
+   "name": "Faustini rim A",
+   "x0M": 54000.0,
+   "x1M": 74000.0,
+   "y0M": -10000.0,
+   "y1M": 10000.0
+  }
+ ],
+ "source": "NASA LOLA average Sun / Earth visibility, 18.6 years, any part of the disk, 60 m (Mazarico et al. 2011), each 600 m cell shows its brightest 60 m pixel; hillshade from LOLA LDEM_80S_80M"
+}

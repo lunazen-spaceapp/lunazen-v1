@@ -1,0 +1,14 @@
+{
+ "width": 2304,
+ "height": 1152,
+ "lonMinDeg": -180.0,
+ "lonMaxDeg": 180.0,
+ "latMaxDeg": 90.0,
+ "latMinDeg": -90.0,
+ "heightRangeM": [
+  -5324,
+  5682
+ ],
+ "colormap": "gray",
+ "source": "NASA LRO LOLA global elevation LDEM_64 (about 474 m), averaged 10 x 10, shaded from the north-west with the heights exaggerated 3 times"
+}

@@ -1,0 +1,261 @@
+{
+ "format": "int16 little-endian, rows x cols, row 0 at the top (largest y); height_m = offsetM + value * scaleM; -32768 = no data",
+ "noData": -32768,
+ "cropFactor": 4,
+ "farFactor": 6,
+ "far": {
+  "file": "far.bin",
+  "x0M": -304000.0,
+  "y0M": 304000.0,
+  "pixelM": 480.0,
+  "scaleM": 0.25,
+  "offsetM": -132.0,
+  "rows": 1266,
+  "cols": 1266
+ },
+ "accuracy": {
+  "spots": 67,
+  "horizonRmsDeg": 0.12,
+  "sunShareMedianPp": 0.3,
+  "sunShareP90Pp": 1.5,
+  "darkMedianH": 0.8,
+  "darkP90H": 11.6,
+  "darkMaxH": 226
+ },
+ "sites": [
+  {
+   "id": "Site01",
+   "name": "Connecting ridge",
+   "file": "Site01.bin",
+   "x0M": -19000.0,
+   "y0M": -4000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 720.0,
+   "rows": 800,
+   "cols": 800,
+   "interior": {
+    "xMinM": -17000.0,
+    "xMaxM": -5000.0,
+    "yMinM": -18000.0,
+    "yMaxM": -6000.0
+   }
+  },
+  {
+   "id": "Site04",
+   "name": "Shackleton rim",
+   "file": "Site04.bin",
+   "x0M": -9000.0,
+   "y0M": 1000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": -521.0,
+   "rows": 800,
+   "cols": 800,
+   "interior": {
+    "xMinM": -7000.0,
+    "xMaxM": 5000.0,
+    "yMinM": -13000.0,
+    "yMaxM": -1000.0
+   }
+  },
+  {
+   "id": "Site06",
+   "name": "Nobile rim 1",
+   "file": "Site06.bin",
+   "x0M": 74000.0,
+   "y0M": 120000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 3830.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": 76000.0,
+    "xMaxM": 92000.0,
+    "yMinM": 102000.0,
+    "yMaxM": 118000.0
+   }
+  },
+  {
+   "id": "Site07",
+   "name": "Peak near Shackleton",
+   "file": "Site07.bin",
+   "x0M": 22000.0,
+   "y0M": -12000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 616.0,
+   "rows": 800,
+   "cols": 800,
+   "interior": {
+    "xMinM": 24000.0,
+    "xMaxM": 36000.0,
+    "yMinM": -26000.0,
+    "yMaxM": -14000.0
+   }
+  },
+  {
+   "id": "Site11",
+   "name": "de Gerlache rim",
+   "file": "Site11.bin",
+   "x0M": -45000.0,
+   "y0M": 23000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 505.0,
+   "rows": 800,
+   "cols": 800,
+   "interior": {
+    "xMinM": -43000.0,
+    "xMaxM": -31000.0,
+    "yMinM": 9000.0,
+    "yMaxM": 21000.0
+   }
+  },
+  {
+   "id": "Site20",
+   "name": "Leibnitz beta plateau",
+   "file": "Site20.bin",
+   "x0M": 65000.0,
+   "y0M": 126000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 4630.0,
+   "rows": 800,
+   "cols": 800,
+   "interior": {
+    "xMinM": 67000.0,
+    "xMaxM": 79000.0,
+    "yMinM": 112000.0,
+    "yMaxM": 124000.0
+   }
+  },
+  {
+   "id": "Site23",
+   "name": "Malapert massif",
+   "file": "Site23.bin",
+   "x0M": -11000.0,
+   "y0M": 132000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 3039.0,
+   "rows": 1050,
+   "cols": 1050,
+   "interior": {
+    "xMinM": -9000.0,
+    "xMaxM": 8000.0,
+    "yMinM": 113000.0,
+    "yMaxM": 130000.0
+   }
+  },
+  {
+   "id": "Site42",
+   "name": "de Gerlache-Kocher massif",
+   "file": "Site42.bin",
+   "x0M": -123400.0,
+   "y0M": -46100.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 953.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": -121400.0,
+    "xMaxM": -105400.0,
+    "yMinM": -64100.0,
+    "yMaxM": -48100.0
+   }
+  },
+  {
+   "id": "Haworth",
+   "name": "Haworth",
+   "file": "Haworth.bin",
+   "x0M": -52900.0,
+   "y0M": 105400.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 600.0,
+   "rows": 1490,
+   "cols": 1490,
+   "interior": {
+    "xMinM": -50900.0,
+    "xMaxM": -25100.0,
+    "yMinM": 77600.0,
+    "yMaxM": 103400.0
+   }
+  },
+  {
+   "id": "DM2",
+   "name": "Nobile rim 2",
+   "file": "DM2.bin",
+   "x0M": 147000.0,
+   "y0M": 105000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 194.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": 149000.0,
+    "xMaxM": 165000.0,
+    "yMinM": 87000.0,
+    "yMaxM": 103000.0
+   }
+  },
+  {
+   "id": "SL2",
+   "name": "de Gerlache rim 2",
+   "file": "SL2.bin",
+   "x0M": -58500.0,
+   "y0M": 33000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": -47.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": -56500.0,
+    "xMaxM": -40500.0,
+    "yMinM": 15000.0,
+    "yMaxM": 31000.0
+   }
+  },
+  {
+   "id": "SL3",
+   "name": "Connecting ridge extension",
+   "file": "SL3.bin",
+   "x0M": -38700.0,
+   "y0M": 3900.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": 264.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": -36700.0,
+    "xMaxM": -20700.0,
+    "yMinM": -14100.0,
+    "yMaxM": 1900.0
+   }
+  },
+  {
+   "id": "LM7",
+   "name": "Faustini rim A",
+   "file": "LM7.bin",
+   "x0M": 54000.0,
+   "y0M": 10000.0,
+   "pixelM": 20.0,
+   "scaleM": 0.1,
+   "offsetM": -1098.0,
+   "rows": 1000,
+   "cols": 1000,
+   "interior": {
+    "xMinM": 56000.0,
+    "xMaxM": 72000.0,
+    "yMinM": -8000.0,
+    "yMaxM": 8000.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "format": "float32 little-endian, shape [count][9]: row-major rotation J2000 -> MOON_ME",
+ "kernels": [
+  "naif0012.tls",
+  "pck00011.tpc",
+  "moon_de440_250416.tf",
+  "moon_pa_de440_200625.bpc",
+  "de440s.bsp"
+ ],
+ "et0": 757339269.1839061,
+ "step_s": 43200.0,
+ "count": 14611,
+ "interpolation": "4-point Lagrange",
+ "max_error_m_at_station_distance": 45.464
+}

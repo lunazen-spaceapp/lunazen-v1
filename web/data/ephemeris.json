@@ -1,0 +1,37 @@
+{
+ "format": "float32 little-endian, shape [count][bodies][3], km",
+ "bodies": [
+  "SUN",
+  "EARTH",
+  "MOON"
+ ],
+ "frames": [
+  "MOON_ME",
+  "MOON_ME",
+  "J2000"
+ ],
+ "observers": [
+  "MOON",
+  "MOON",
+  "EARTH"
+ ],
+ "aberration_correction": "LT+S",
+ "kernels": [
+  "naif0012.tls",
+  "pck00011.tpc",
+  "moon_de440_250416.tf",
+  "moon_pa_de440_200625.bpc",
+  "de440s.bsp"
+ ],
+ "et0": 757339269.1839061,
+ "step_s": 14400.0,
+ "count": 43831,
+ "start_utc": "2024-01-01T00:00:00",
+ "end_utc": "2044-01-01T00:00:00",
+ "interpolation": "4-point Lagrange",
+ "max_error_arcsec": {
+  "SUN": 0.00755314633614339,
+  "EARTH": 0.0046432236907372965,
+  "MOON": 0.010846448996486999
+ }
+}
