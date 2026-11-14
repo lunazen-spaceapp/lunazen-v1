@@ -424,8 +424,8 @@ def test_resources_is_an_accordion_with_computed_figures(page, base):
     assert page.locator("#data .acc-sub").is_hidden()
     # the guide
     page.locator("#guides .acc-head").click()
-    assert page.locator("#guide-pages").text_content() == "7"
-    assert page.locator("[data-guide=summary]").get_attribute("href") == "lunazen_guide.pdf#page=1"
+    assert page.locator("#guide-pages").text_content() == "10"
+    assert page.locator("[data-guide=summary]").get_attribute("href") == "lunazen_guide.pdf#page=2"
     # the evidence table and its date
     page.locator("#evidence .acc-head").click()
     rows = [[c.text_content().strip() for c in r.locator("td").all()] for r in page.locator("#evidence-rows tr").all()]

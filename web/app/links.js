@@ -6,20 +6,20 @@ export const VIDEO_PLAYLIST = PLAYLIST_URL;             // the six-part series "
 export const VIDEO_POLAR_SKY = EXPLORER_VIDEO_URL;      // "The Sun and Earth in the South Polar Sky"
 
 export const GUIDE_PDF = "lunazen_guide.pdf";
-export const GUIDE_PAGE_COUNT = 7;
-// Physical page numbers of the user guide (docs/learn/lunazen_guide.pdf), the ones a #page=N link opens.
+export const GUIDE_PAGE_COUNT = 10;
+// Physical page numbers of the user guide (docs/learn/lunazen_guide.pdf, 10 pages), the ones a #page=N link opens.
 // UPDATE THESE WHEN THE PDF IS REBUILT: read them from the PDF (pdftotext -f N -l N), they move when the text does.
 export const GUIDE_PAGES = {
-  summary: 1,   // the one-page summary
-  series: 5,    // 4 How It Works in One Page
-  method: 6,    // 5 Why Trust It
-  limits: 6,    // 6 What It Does Not Do
+  summary: 2,   // Overview at a Glance
+  series: 7,    // 4.2 Plan tab
+  method: 8,    // 5 Data: where the numbers come from
+  limits: 8,    // 5.2 Modelling assumptions and limitations
 };
 
 // The wording of the guide links, in one place ({n} is the page).
 export const GUIDE_LABELS = {
-  method: "Checks: guide, p. {n}",                  // Section 5, Why Trust It
-  series: "How the search works: guide, p. {n}",    // Section 4, How It Works in One Page
+  method: "Checks: guide, p. {n}",                  // Section 5, Data
+  series: "How the Plan pages work: guide, p. {n}",  // Section 4.2, Plan tab
 };
 
 export const hasUrl = (url) => /^https?:\/\//.test(url);

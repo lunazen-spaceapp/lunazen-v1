@@ -23,13 +23,6 @@ data/external/
 docs/**/*.html
 docs/**/*_files/
 
-# Overview PDF build
-docs/learn/figdata.json
-docs/learn/*.aux
-docs/learn/*.log
-docs/learn/*.out
-docs/learn/*.toc
-
 # Site build (scripts/build_site.sh)
 public/
 

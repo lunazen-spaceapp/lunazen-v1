@@ -1,6 +1,6 @@
 """Evaluate all 27 NASA PGDA south-pole sites against the site-selection rule -> data/sites/site_selection.csv.
 
-Rule (docs/learn, Section 2): a PGDA 5 m site is used if (A) its tile centre lies in the published data area of a NASA
+Rule: a PGDA 5 m site is used if (A) its tile centre lies in the published data area of a NASA
 Artemis candidate region (2022 or 2024 list, data/sites/artemis_regions.json) or (B) NASA's own region-of-interest polygons and the
 peer-reviewed error estimates of Barker et al. (2021) exist for it (Sites 1, 4, 7, 11), and (C) NASA's 60 m average-visibility
 map (85 S to the pole), which the spots are chosen from, covers part of the tile. Flown CLPS landings are added separately.

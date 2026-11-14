@@ -7,8 +7,8 @@ import { icon16 } from "./components.js";
 const CHEVRON = '<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
 const ROWS_KEY = "lunazen.plan.rows";
 
-// "How accurate is this?", the checks and how the search works leave the pages and live here.
-export const METHOD_HTML = '<p><a href="evidence.html">How accurate is this? ↗</a> · <a data-guide="method" href="lunazen_guide.pdf">Checks: guide</a> · <a data-guide="series" href="lunazen_guide.pdf">How the search works: guide</a></p>';
+// "How accurate is this?", the checks and how the Plan pages work leave the pages and live here.
+export const METHOD_HTML = '<p><a href="evidence.html">How accurate is this? ↗</a> · <a data-guide="method" href="lunazen_guide.pdf">Checks: guide</a> · <a data-guide="series" href="lunazen_guide.pdf">How the Plan pages work: guide</a></p>';
 
 // groups: [[title, html]]. Appends the dialog to the page and wires the "How to use" button (#help-open); About the method is always last.
 export function mountHelp(title, groups) {

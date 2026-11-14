@@ -122,11 +122,11 @@ def test_barker2021_regions_agree_with_published_values():
 
 
 def test_the_resources_page_counts_match_the_site_table_and_the_guide_thumbnail():
-    """Resources says 'all 27' sites and shows page 1 of the guide: both must be what the repository holds."""
+    """Resources says 'all 27' sites and shows a page of the guide: both must be what the repository holds."""
     import csv
 
     html = (ROOT / "web" / "resources.html").read_text()
     with (ROOT / "data" / "sites" / "site_selection.csv").open() as f:
         n = sum(1 for _ in csv.DictReader(f))
     assert f"View all {n} evaluated sites" in html
-    assert (ROOT / "web" / "figures" / "guide_page1.png").read_bytes() == (ROOT / "docs" / "learn" / "guide_page1.png").read_bytes()
+    assert (ROOT / "web" / "figures" / "guide_summary.png").read_bytes() == (ROOT / "docs" / "learn" / "guide_summary.png").read_bytes()

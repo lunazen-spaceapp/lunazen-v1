@@ -6,7 +6,7 @@ At the lunar south pole the Sun never climbs more than a few degrees, so a ridge
 
 - **App:** https://lunazen-v1.vercel.app
 - **Overview video:** https://youtu.be/3MQQRflfRCE
-- **User Guide:** [lunazen_guide.pdf](docs/learn/lunazen_guide.pdf), 7 pages; page 1 is a one-page summary
+- **User Guide:** [lunazen_guide.pdf](docs/learn/lunazen_guide.pdf), 10 pages; page 2 is a one-page overview
 - **Videos:** https://www.youtube.com/playlist?list=PLct6-XOWUjH8 (a six-part series on the south polar sky)
 
 ![The Home page: the Sun and Earth over the Site01-1 skyline through March 2027](docs/media/hero.gif)
@@ -96,7 +96,7 @@ No names, voices or faces of anyone under 18 appear in the app, the guide or the
 
 ## Licence and credits
 
-- The code is under the [MIT licence](LICENSE). The documentation (the guide, its figures and the notebooks' prose) is under [CC BY 4.0](LICENSE-docs).
+- The code and the documentation (the guide, its figures and the notebooks) are under the [Apache License 2.0](LICENSE).
 - NASA data is used under NASA's public-domain and open-data terms. Not endorsed by NASA; no NASA logo or mission patch is used.
 - The bundled fonts, Jost and Public Sans (`web/app/fonts/`), are under the SIL Open Font License 1.1; the licence texts are next to the fonts.
 - Data sources: NASA/JPL NAIF SPICE kernels (DE440, lunar frames); LRO LOLA elevation models (PDS, via the MIT LOLA mirror); NASA PGDA 5 m candidate-site maps (Barker et al. 2021); SLDEM2015 terrain (LOLA and Kaguya); LROC and NSSDCA landing positions; LOLA average illumination and Earth-visibility maps (Mazarico et al. 2011); Deep Space Network antenna positions from NASA/JPL document 810-005; JPL Horizons (validation only).

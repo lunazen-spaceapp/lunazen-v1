@@ -3,7 +3,7 @@ name = "lunazen-landing-site-navigator"
 version = "0.1.0"
 description = "Lunar Landing Site Navigator: terrain-aware Sun and Earth visibility for lunar sites"
 readme = "README.md"
-license = "MIT"
+license = "Apache-2.0"
 requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.11.2",

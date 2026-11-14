@@ -24,10 +24,10 @@ def pages(pdf):
 def test_guide_page_numbers_match_the_built_pdf():
     stored = {k: int(v) for k, v in re.findall(r"^\s+(summary|series|method|limits):\s*(\d+)", LINKS, re.M)}
     assert set(stored) == {"summary", "series", "method", "limits"}
-    heading = {"series": "How It Works in One Page", "method": "Why Trust It", "limits": "What It Does Not Do"}
+    heading = {"series": "Plan tab", "method": "Where the numbers come from", "limits": "Modelling assumptions and limitations"}
     for key, text in heading.items():
         assert text in page_text(PDF, stored[key]), f"{key}: page {stored[key]} does not hold '{text}'"
-    assert "User Guide" in page_text(PDF, stored["summary"])
+    assert "Overview at a Glance" in page_text(PDF, stored["summary"])
 
 
 def test_the_page_count_in_links_js_matches_the_pdf():

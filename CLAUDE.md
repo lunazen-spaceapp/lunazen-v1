@@ -2,7 +2,7 @@
 
 This file guides AI coding assistants (Claude Code was used to build this project) and human contributors.
 
-LunaZen Landing Site Navigator (NASA Space Apps 2026): for a lunar south-pole spot and a date, when the Sun and Earth are above the real terrain horizon, and how long the dark lasts. A Python reference (`lunazen/`) and a dependency-free browser engine (`web/engine/`) compute it; `web/` is a static app. The documentation is the README and the User Guide (`docs/learn/lunazen_guide.pdf`, source `lunazen_guide.tex`); the physics is in `lunazen/` (the reference) and `web/engine/` (read the relevant module before changing physics). The pages are in `web/`, the data builds in `pipeline/`, the checks in `validation/` and `tests/`.
+LunaZen Landing Site Navigator (NASA Space Apps 2026): for a lunar south-pole spot and a date, when the Sun and Earth are above the real terrain horizon, and how long the dark lasts. A Python reference (`lunazen/`) and a dependency-free browser engine (`web/engine/`) compute it; `web/` is a static app. The documentation is the README and the User Guide (`docs/learn/lunazen_guide.pdf`); the physics is in `lunazen/` (the reference) and `web/engine/` (read the relevant module before changing physics). The pages are in `web/`, the data builds in `pipeline/`, the checks in `validation/` and `tests/`.
 
 ## Commands
 
@@ -14,7 +14,6 @@ cd web && npm test               # browser engine vs the Python fixtures, app he
 cd web && npm run serve          # the app at http://localhost:8000/
 bash scripts/build_site.sh       # the deployable site -> public/ (Vercel runs it); scripts/package_web.sh builds the zip
 uv run python pipeline/site_report.py Site01-1 2027-01-01 2028-01-01   # the Explorer on the command line (or im1, bg1, --lat/--lon)
-cd docs/learn && node compute.mjs && uv run python figures.py          # guide figures; then xelatex twice per .tex (see their headers)
 ```
 
 ## Conventions
