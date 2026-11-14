@@ -1,0 +1,358 @@
+{
+ "description": "NASA Artemis candidate landing regions (about 15 km across). Outlines from the published 2022 region grids; the October 2024 list was made for Artemis III, which NASA redesignated in 2026 as a low-Earth-orbit demonstration (Artemis IV is now the first crewed landing). New 2024 regions have no published outline.",
+ "projection": "south polar stereographic, R = 1737.4 km, metres",
+ "sources": {
+  "2022": "https://www.nasa.gov/news-release/nasa-identifies-candidate-regions-for-landing-next-americans-on-moon/",
+  "2024": "https://www.prnewswire.com/news-releases/nasa-provides-update-on-artemis-iii-moon-landing-regions-302288659.html",
+  "2024_abstract": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1901.pdf",
+  "outlines": "https://www.nasa.gov/learning-resources/app-development-challenge/2023-handbook-and-coding-components",
+  "artemis_iii_redesignated": "https://www.nasa.gov/mission/artemis-iii/"
+ },
+ "regions": [
+  {
+   "name": "Amundsen Rim",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     154002.5,
+     71497.5
+    ],
+    [
+     173997.5,
+     71497.5
+    ],
+    [
+     173997.5,
+     51502.5
+    ],
+    [
+     154002.5,
+     51502.5
+    ]
+   ]
+  },
+  {
+   "name": "Connecting Ridge",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     -18997.5,
+     -4002.5
+    ],
+    [
+     -3002.5,
+     -4002.5
+    ],
+    [
+     -3002.5,
+     -19997.5
+    ],
+    [
+     -18997.5,
+     -19997.5
+    ]
+   ]
+  },
+  {
+   "name": "Connecting Ridge Extension",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     -38697.5,
+     3897.5
+    ],
+    [
+     -18702.5,
+     3897.5
+    ],
+    [
+     -18702.5,
+     -16097.5
+    ],
+    [
+     -38697.5,
+     -16097.5
+    ]
+   ]
+  },
+  {
+   "name": "de Gerlache Rim 1",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     -44997.5,
+     22997.5
+    ],
+    [
+     -29002.5,
+     22997.5
+    ],
+    [
+     -29002.5,
+     7002.5
+    ],
+    [
+     -44997.5,
+     7002.5
+    ]
+   ]
+  },
+  {
+   "name": "de Gerlache Rim 2",
+   "lists": [
+    "2022",
+    "2024"
+   ],
+   "outlineXyM": [
+    [
+     -58497.5,
+     32997.5
+    ],
+    [
+     -38502.5,
+     32997.5
+    ],
+    [
+     -38502.5,
+     13002.5
+    ],
+    [
+     -58497.5,
+     13002.5
+    ]
+   ]
+  },
+  {
+   "name": "de Gerlache-Kocher Massif",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     -123397.5,
+     -46102.5
+    ],
+    [
+     -103402.5,
+     -46102.5
+    ],
+    [
+     -103402.5,
+     -66097.5
+    ],
+    [
+     -123397.5,
+     -66097.5
+    ]
+   ]
+  },
+  {
+   "name": "Faustini Rim A",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     54002.5,
+     9997.5
+    ],
+    [
+     73997.5,
+     9997.5
+    ],
+    [
+     73997.5,
+     -9997.5
+    ],
+    [
+     54002.5,
+     -9997.5
+    ]
+   ]
+  },
+  {
+   "name": "Haworth",
+   "lists": [
+    "2022",
+    "2024"
+   ],
+   "outlineXyM": [
+    [
+     -52897.5,
+     105397.5
+    ],
+    [
+     -23102.5,
+     105397.5
+    ],
+    [
+     -23102.5,
+     75602.5
+    ],
+    [
+     -52897.5,
+     75602.5
+    ]
+   ]
+  },
+  {
+   "name": "Leibnitz Beta Plateau",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     65002.5,
+     125997.5
+    ],
+    [
+     80997.5,
+     125997.5
+    ],
+    [
+     80997.5,
+     110002.5
+    ],
+    [
+     65002.5,
+     110002.5
+    ]
+   ]
+  },
+  {
+   "name": "Malapert Massif",
+   "lists": [
+    "2022",
+    "2024"
+   ],
+   "outlineXyM": [
+    [
+     -10997.5,
+     131997.5
+    ],
+    [
+     9997.5,
+     131997.5
+    ],
+    [
+     9997.5,
+     111002.5
+    ],
+    [
+     -10997.5,
+     111002.5
+    ]
+   ]
+  },
+  {
+   "name": "Nobile Rim 1",
+   "lists": [
+    "2022",
+    "2024"
+   ],
+   "outlineXyM": [
+    [
+     74002.5,
+     119997.5
+    ],
+    [
+     93997.5,
+     119997.5
+    ],
+    [
+     93997.5,
+     100002.5
+    ],
+    [
+     74002.5,
+     100002.5
+    ]
+   ]
+  },
+  {
+   "name": "Nobile Rim 2",
+   "lists": [
+    "2022",
+    "2024"
+   ],
+   "outlineXyM": [
+    [
+     147002.5,
+     104997.5
+    ],
+    [
+     166997.5,
+     104997.5
+    ],
+    [
+     166997.5,
+     85002.5
+    ],
+    [
+     147002.5,
+     85002.5
+    ]
+   ]
+  },
+  {
+   "name": "Peak Near Shackleton",
+   "lists": [
+    "2022"
+   ],
+   "outlineXyM": [
+    [
+     22002.5,
+     -12002.5
+    ],
+    [
+     37997.5,
+     -12002.5
+    ],
+    [
+     37997.5,
+     -27997.5
+    ],
+    [
+     22002.5,
+     -27997.5
+    ]
+   ]
+  },
+  {
+   "name": "Peak near Cabeus B",
+   "lists": [
+    "2024"
+   ],
+   "outlineXyM": null
+  },
+  {
+   "name": "Mons Mouton Plateau",
+   "lists": [
+    "2024"
+   ],
+   "outlineXyM": null
+  },
+  {
+   "name": "Mons Mouton",
+   "lists": [
+    "2024"
+   ],
+   "outlineXyM": null
+  },
+  {
+   "name": "Slater Plain",
+   "lists": [
+    "2024"
+   ],
+   "outlineXyM": null
+  }
+ ]
+}

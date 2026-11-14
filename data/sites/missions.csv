@@ -1,0 +1,4 @@
+id,name,operator,latitude_deg,longitude_deg,landed_utc,ended,coordinates_source,notes
+im1,IM-1 Odysseus,Intuitive Machines,-80.13,1.44,2024-02-22T23:23:53,2024-02-29 (date only; sun low on the horizon),https://lroc.im-ldi.com/images/1360,"Final resting position from LROC; tilted ~30 deg on a ~12 deg slope near Malapert A"
+im2,IM-2 Athena,Intuitive Machines,-84.7906,29.1957,2025-03-06T17:28:50,2025-03-07 (power depleted; lander on its side),https://lroc.im-ldi.com/images/1408,"Final resting position from LROC; on its side in a ~20 m crater on Mons Mouton"
+bg1,Blue Ghost Mission 1,Firefly Aerospace,18.562,61.810,2025-03-02T08:34:00,2025-03-16 ~23:15 UTC (about 5 h after sunset),https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=BLUEGHOST,"Mare Crisium near Mons Latreille; NSSDCA landing coordinates"

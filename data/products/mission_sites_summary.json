@@ -1,0 +1,540 @@
+{
+ "mast_m": 2.0,
+ "days": 20,
+ "missions": [
+  {
+   "id": "im1",
+   "name": "IM-1 Odysseus",
+   "operator": "Intuitive Machines",
+   "latitude_deg": "-80.13",
+   "longitude_deg": "1.44",
+   "landed_utc": "2024-02-22T23:23:53",
+   "ended": "2024-02-29 (date only; sun low on the horizon)",
+   "coordinates_source": "https://lroc.im-ldi.com/images/1360",
+   "notes": "Final resting position from LROC; tilted ~30 deg on a ~12 deg slope near Malapert A",
+   "ground_m": 2594.430330344012,
+   "mast_m": 2.0,
+   "horizon_deg": [
+    -0.26,
+    10.93
+   ],
+   "sun_up_at_landing": true,
+   "first_sunset_after_landing_utc": "2024-03-02T18:19:13",
+   "days_of_sunlight_after_landing": 8.788425925925926,
+   "sun_elevation_deg_range": [
+    -9.189238107232049,
+    10.948977422188998
+   ],
+   "earth_visible_fraction_20d": 1.0,
+   "earth_elevation_deg_range": [
+    2.744839053849991,
+    15.432065100756539
+   ],
+   "daily": [
+    {
+     "date": "2024-02-22",
+     "samples": 4,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.486186687024736
+    },
+    {
+     "date": "2024-02-23",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.905536954369527
+    },
+    {
+     "date": "2024-02-24",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.948977422188998
+    },
+    {
+     "date": "2024-02-25",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.876299699549183
+    },
+    {
+     "date": "2024-02-26",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.3994344089179
+    },
+    {
+     "date": "2024-02-27",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 9.49857504263088
+    },
+    {
+     "date": "2024-02-28",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 8.215924584961376
+    },
+    {
+     "date": "2024-02-29",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 6.610648719775656
+    },
+    {
+     "date": "2024-03-01",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 4.755226595214676
+    },
+    {
+     "date": "2024-03-02",
+     "samples": 144,
+     "sun_up": 0.7638888888888888,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 2.731671771558569
+    },
+    {
+     "date": "2024-03-03",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 0.6279776283443553
+    },
+    {
+     "date": "2024-03-04",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -1.465116372821865
+    },
+    {
+     "date": "2024-03-05",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -3.4571592434621623
+    },
+    {
+     "date": "2024-03-06",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -5.261059781491999
+    },
+    {
+     "date": "2024-03-07",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -6.796416924238737
+    },
+    {
+     "date": "2024-03-08",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -7.993191245085332
+    },
+    {
+     "date": "2024-03-09",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -8.795565044319725
+    },
+    {
+     "date": "2024-03-10",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -9.088058167470178
+    },
+    {
+     "date": "2024-03-11",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -8.566643521898804
+    },
+    {
+     "date": "2024-03-12",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -7.626795309689462
+    },
+    {
+     "date": "2024-03-13",
+     "samples": 141,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -6.345571313879327
+    }
+   ]
+  },
+  {
+   "id": "im2",
+   "name": "IM-2 Athena",
+   "operator": "Intuitive Machines",
+   "latitude_deg": "-84.7906",
+   "longitude_deg": "29.1957",
+   "landed_utc": "2025-03-06T17:28:50",
+   "ended": "2025-03-07 (power depleted; lander on its side)",
+   "coordinates_source": "https://lroc.im-ldi.com/images/1408",
+   "notes": "Final resting position from LROC; on its side in a ~20 m crater on Mons Mouton",
+   "ground_m": 5321.880448488677,
+   "mast_m": 2.0,
+   "horizon_deg": [
+    -1.47,
+    4.06
+   ],
+   "sun_up_at_landing": true,
+   "first_sunset_after_landing_utc": "2025-03-19T22:59:20",
+   "days_of_sunlight_after_landing": 13.229513888888889,
+   "sun_elevation_deg_range": [
+    -5.434762408399361,
+    5.362877663781623
+   ],
+   "earth_visible_fraction_20d": 0.7976397084345713,
+   "earth_elevation_deg_range": [
+    -2.8789320126496465,
+    11.329762640215984
+   ],
+   "daily": [
+    {
+     "date": "2025-03-06",
+     "samples": 40,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 2.725861710112098
+    },
+    {
+     "date": "2025-03-07",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 3.6143103004578645
+    },
+    {
+     "date": "2025-03-08",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 4.352549240052406
+    },
+    {
+     "date": "2025-03-09",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 4.905981033573123
+    },
+    {
+     "date": "2025-03-10",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 5.248317740724158
+    },
+    {
+     "date": "2025-03-11",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 5.362877663781623
+    },
+    {
+     "date": "2025-03-12",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 5.362845354846254
+    },
+    {
+     "date": "2025-03-13",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 5.241716999860798
+    },
+    {
+     "date": "2025-03-14",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 4.891046355694844
+    },
+    {
+     "date": "2025-03-15",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 4.325786289617915
+    },
+    {
+     "date": "2025-03-16",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 3.5705120057491455
+    },
+    {
+     "date": "2025-03-17",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 2.658166002107045
+    },
+    {
+     "date": "2025-03-18",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 1.628474508076187
+    },
+    {
+     "date": "2025-03-19",
+     "samples": 144,
+     "sun_up": 0.9583333333333334,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 0.5261501671165845
+    },
+    {
+     "date": "2025-03-20",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 0.2777777777777778,
+     "sun_max_elevation_deg": -0.6010269329647803
+    },
+    {
+     "date": "2025-03-21",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 0.0,
+     "sun_max_elevation_deg": -1.7041891712279222
+    },
+    {
+     "date": "2025-03-22",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 0.0,
+     "sun_max_elevation_deg": -2.7353869935681043
+    },
+    {
+     "date": "2025-03-23",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 0.0,
+     "sun_max_elevation_deg": -3.649593628272373
+    },
+    {
+     "date": "2025-03-24",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 0.6736111111111112,
+     "sun_max_elevation_deg": -4.40667062151923
+    },
+    {
+     "date": "2025-03-25",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -4.973227613264115
+    },
+    {
+     "date": "2025-03-26",
+     "samples": 105,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -5.324276489597063
+    }
+   ]
+  },
+  {
+   "id": "bg1",
+   "name": "Blue Ghost Mission 1",
+   "operator": "Firefly Aerospace",
+   "latitude_deg": "18.562",
+   "longitude_deg": "61.810",
+   "landed_utc": "2025-03-02T08:34:00",
+   "ended": "2025-03-16 ~23:15 UTC (about 5 h after sunset)",
+   "coordinates_source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=BLUEGHOST",
+   "notes": "Mare Crisium near Mons Latreille; NSSDCA landing coordinates",
+   "ground_m": -3652.266300390625,
+   "mast_m": 2.0,
+   "horizon_deg": [
+    0.13,
+    3.03
+   ],
+   "sun_up_at_landing": true,
+   "first_sunset_after_landing_utc": "2025-03-16T19:28:30",
+   "days_of_sunlight_after_landing": 14.454513888888888,
+   "sun_elevation_deg_range": [
+    -60.77944488414276,
+    71.20420481442352
+   ],
+   "earth_visible_fraction_20d": 1.0,
+   "earth_elevation_deg_range": [
+    22.11963406614265,
+    29.750086360868575
+   ],
+   "daily": [
+    {
+     "date": "2025-03-02",
+     "samples": 93,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 10.81005435519128
+    },
+    {
+     "date": "2025-03-03",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 22.310990941845063
+    },
+    {
+     "date": "2025-03-04",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 33.669846509319804
+    },
+    {
+     "date": "2025-03-05",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 44.7503139714805
+    },
+    {
+     "date": "2025-03-06",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 55.26311325565105
+    },
+    {
+     "date": "2025-03-07",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 64.48124210077975
+    },
+    {
+     "date": "2025-03-08",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 70.4687446030093
+    },
+    {
+     "date": "2025-03-09",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 71.20420481442352
+    },
+    {
+     "date": "2025-03-10",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 70.03866529403832
+    },
+    {
+     "date": "2025-03-11",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 63.513432295911656
+    },
+    {
+     "date": "2025-03-12",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 54.09488627777037
+    },
+    {
+     "date": "2025-03-13",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 43.52014481590751
+    },
+    {
+     "date": "2025-03-14",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 32.435253784010236
+    },
+    {
+     "date": "2025-03-15",
+     "samples": 144,
+     "sun_up": 1.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 21.101199213415427
+    },
+    {
+     "date": "2025-03-16",
+     "samples": 144,
+     "sun_up": 0.8125,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": 9.64298689371793
+    },
+    {
+     "date": "2025-03-17",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -1.866080711719627
+    },
+    {
+     "date": "2025-03-18",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -13.369998204041796
+    },
+    {
+     "date": "2025-03-19",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -24.809559580063624
+    },
+    {
+     "date": "2025-03-20",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -36.09945530877536
+    },
+    {
+     "date": "2025-03-21",
+     "samples": 144,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -47.0833508606236
+    },
+    {
+     "date": "2025-03-22",
+     "samples": 52,
+     "sun_up": 0.0,
+     "earth_up": 1.0,
+     "sun_max_elevation_deg": -57.41455502669909
+    }
+   ]
+  }
+ ]
+}

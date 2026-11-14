@@ -1,0 +1,28 @@
+site,name,tile_km,centre_lat_deg,centre_lon_deg,artemis_regions,in_artemis_region,barker2021_error_estimate,visibility_map_coverage,selected
+Site01,Connecting ridge,16.0,-89.463,222.51,Connecting Ridge (central),True,True,1.0,True
+Site04,Shackleton rim,16.0,-89.767,188.13,,False,True,1.0,True
+Site06,Nobile rim 1,20.0,-85.438,37.37,Nobile Rim 1 (central),True,False,1.0,True
+Site07,Peak near Shackleton,16.0,-88.811,123.69,Peak Near Shackleton (central),True,True,1.0,True
+Site11,de Gerlache rim,16.0,-88.683,292.07,de Gerlache Rim 1 (central),True,True,1.0,True
+Site20,Leibnitz beta plateau,16.0,-85.427,31.74,Leibnitz Beta Plateau (central),True,False,1.0,True
+Site20v2,"Leibnitz beta plateau, extended boundaries",26.0,-85.427,31.74,Leibnitz Beta Plateau (central),True,False,1.0,False
+Site23,Malapert massif,21.0,-85.995,359.76,Malapert Massif (central),True,False,1.0,True
+Site42,de Gerlache-Kocher massif,20.0,-85.83,243.68,de Gerlache-Kocher Massif (central),True,False,1.0,True
+Haworth,Haworth,29.8,-86.764,337.22,Haworth (central),True,False,1.0,True
+Shoemaker,Shoemaker,20.0,-87.184,62.84,,False,False,1.0,False
+DM1,Amundsen rim,20.0,-84.229,69.44,Amundsen Rim (central),True,False,0.0,False
+DM2,Nobile rim 2,20.0,-83.954,58.82,Nobile Rim 2 (central),True,False,0.17,True
+SL2,de Gerlache rim,20.0,-88.23,295.37,de Gerlache Rim 2 (central),True,False,1.0,True
+SL3,Connecting ridge extension,20.0,-89.032,258.0,Connecting Ridge Extension (central),True,False,1.0,True
+NPA,Cabeus exterior wall 1,20.0,-86.924,288.43,,False,False,1.0,False
+NPB,Amundsen 1,20.0,-83.905,89.54,,False,False,0.0,False
+NPC,Idel'son L crater 1,20.0,-84.54,126.9,,False,False,1.0,False
+NPD,Malapert crater 1,20.0,-84.803,8.39,,False,False,0.25,False
+LM1,Shackleton Rim B,20.0,-89.524,56.31,,False,False,1.0,False
+LM2,Shoemaker Rim A,20.0,-88.079,11.89,,False,False,1.0,False
+LM3,Shoemaker Rim B,20.0,-88.383,16.59,,False,False,1.0,False
+LM4,Shoemaker Rim C,20.0,-88.965,37.23,,False,False,1.0,False
+LM5,Shoemaker Rim D,20.0,-88.632,74.62,,False,False,1.0,False
+LM6,Shoemaker Rim E,20.0,-87.946,71.27,,False,False,1.0,False
+LM7,Faustini Rim A,20.0,-87.89,90.0,Faustini Rim A (central),True,False,1.0,True
+LM8,Shoemaker Rim F,20.0,-87.342,60.26,,False,False,1.0,False

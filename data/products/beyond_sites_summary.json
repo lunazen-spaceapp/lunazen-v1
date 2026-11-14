@@ -1,0 +1,522 @@
+{
+ "mast_m": 2.0,
+ "terrain": "global LOLA LDEM_64 (474 m)",
+ "sites": [
+  {
+   "id": "a11",
+   "name": "Apollo 11 Tranquility Base",
+   "operator": "NASA",
+   "latitude_deg": "0.67416",
+   "longitude_deg": "23.47314",
+   "landed_date": "1969-07-20",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017 (LROC NAC and laser ranging; table: lroc.im-ldi.com/data/support/downloads/2016_LROC_Coordinates_of_Human_Features.pdf)",
+   "ground_m": -1925.6043458432005,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4865296803652968,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4865296803652968,
+     "energyWhPerW": 2704.0085899804417,
+     "longestDarkHours": 354.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.5128781626205994,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5128781626205994,
+     "energyWhPerW": 2835.6553433753297,
+     "longestDarkHours": 354.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.4995148401826484,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4995148401826484,
+     "energyWhPerW": 2798.3628560969696,
+     "longestDarkHours": 354.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "a12",
+   "name": "Apollo 12 Ocean of Storms",
+   "operator": "NASA",
+   "latitude_deg": "-3.0128",
+   "longitude_deg": "336.5781",
+   "landed_date": "1969-11-19",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017",
+   "ground_m": -1427.554621439998,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4914383561643836,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4914383561643836,
+     "energyWhPerW": 2759.5634986513483,
+     "longestDarkHours": 353.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.5033155932492814,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5033155932492814,
+     "energyWhPerW": 2835.8967535317106,
+     "longestDarkHours": 353.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.5115011415525114,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5115011415525114,
+     "energyWhPerW": 2844.84642796541,
+     "longestDarkHours": 353.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "a14",
+   "name": "Apollo 14 Fra Mauro",
+   "operator": "NASA",
+   "latitude_deg": "-3.64589",
+   "longitude_deg": "342.52806",
+   "landed_date": "1971-02-05",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017",
+   "ground_m": -1062.166664384004,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4823059360730594,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4823059360730594,
+     "energyWhPerW": 2684.554212465345,
+     "longestDarkHours": 359.0,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4963144263881379,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4963144263881379,
+     "energyWhPerW": 2770.7962552666418,
+     "longestDarkHours": 359.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.502283105022831,
+     "earthFraction": 1.0,
+     "bothFraction": 0.502283105022831,
+     "energyWhPerW": 2779.065011447117,
+     "longestDarkHours": 359.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "a15",
+   "name": "Apollo 15 Hadley-Apennine",
+   "operator": "NASA",
+   "latitude_deg": "26.13239",
+   "longitude_deg": "3.6333",
+   "landed_date": "1971-07-30",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017",
+   "ground_m": -1924.298058176,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.46384132420091323,
+     "earthFraction": 1.0,
+     "bothFraction": 0.46384132420091323,
+     "energyWhPerW": 2973.3190092360874,
+     "longestDarkHours": 373.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4836212539488289,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4836212539488289,
+     "energyWhPerW": 3101.7822249681894,
+     "longestDarkHours": 373.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.4812785388127854,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4812785388127854,
+     "energyWhPerW": 3095.2759932656727,
+     "longestDarkHours": 373.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "a16",
+   "name": "Apollo 16 Descartes",
+   "operator": "NASA",
+   "latitude_deg": "-8.9734",
+   "longitude_deg": "15.5011",
+   "landed_date": "1972-04-21",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017",
+   "ground_m": 8.699955199999916,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4843036529680365,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4843036529680365,
+     "energyWhPerW": 2772.659223672125,
+     "longestDarkHours": 356.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.508495318325412,
+     "earthFraction": 1.0,
+     "bothFraction": 0.508495318325412,
+     "energyWhPerW": 2899.68130618631,
+     "longestDarkHours": 356.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.4992579908675799,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4992579908675799,
+     "energyWhPerW": 2876.288500274642,
+     "longestDarkHours": 356.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "a17",
+   "name": "Apollo 17 Taurus-Littrow",
+   "operator": "NASA",
+   "latitude_deg": "20.1911",
+   "longitude_deg": "30.7723",
+   "landed_date": "1972-12-11",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lunar module position of Wagner et al. 2017",
+   "ground_m": -2624.9969865600006,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4668949771689498,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4668949771689498,
+     "energyWhPerW": 2855.4867439975133,
+     "longestDarkHours": 369.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4936676437942909,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4936676437942909,
+     "energyWhPerW": 3011.485797725742,
+     "longestDarkHours": 369.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.4778824200913242,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4778824200913242,
+     "energyWhPerW": 2940.064191743836,
+     "longestDarkHours": 369.0,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "ce3",
+   "name": "Chang'e 3 Mare Imbrium",
+   "operator": "CNSA",
+   "latitude_deg": "44.1214",
+   "longitude_deg": "340.4883",
+   "landed_date": "2013-12-14",
+   "coordinates_source": "https://doi.org/10.1016/j.icarus.2016.05.011",
+   "notes": "Lander position of Wagner et al. 2017",
+   "ground_m": -2633.987261759999,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4908675799086758,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4908675799086758,
+     "energyWhPerW": 3662.923338909969,
+     "longestDarkHours": 358.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.5047670546717136,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5047670546717136,
+     "energyWhPerW": 3778.864342269617,
+     "longestDarkHours": 358.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.5111301369863014,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5111301369863014,
+     "energyWhPerW": 3808.865239730584,
+     "longestDarkHours": 357.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "ce4",
+   "name": "Chang'e 4 Von Karman",
+   "operator": "CNSA",
+   "latitude_deg": "-45.4561",
+   "longitude_deg": "177.5885",
+   "landed_date": "2019-01-03",
+   "coordinates_source": "https://lroc.im-ldi.com/posts/1100",
+   "notes": "LROC position from the stereo topographic map (about 3 m); an independent paper gives 45.457 S 177.588 E (Di et al. 2019, ISPRS Archives XLII-2/W13)",
+   "ground_m": -5929.416399999999,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.510958904109589,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3827.324341775882,
+     "longestDarkHours": 362.25,
+     "longestCommsGapHours": 8760.0,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8760.0
+    },
+    "2028": {
+     "sunlitFraction": 0.490850101033099,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3705.3120273794,
+     "longestDarkHours": 362.75,
+     "longestCommsGapHours": 8784.25,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8784.25
+    },
+    "2029": {
+     "sunlitFraction": 0.4915810502283105,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3699.5712231488756,
+     "longestDarkHours": 363.0,
+     "longestCommsGapHours": 8760.0,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8760.0
+    }
+   }
+  },
+  {
+   "id": "ce5",
+   "name": "Chang'e 5 Mons Rumker",
+   "operator": "CNSA",
+   "latitude_deg": "43.0576",
+   "longitude_deg": "308.0839",
+   "landed_date": "2020-12-01",
+   "coordinates_source": "https://lroc.im-ldi.com/images/1172.2020",
+   "notes": "LROC position (+-20 m); radio tracking agrees to 0.01 deg (Remote Sensing 13(4), 590)",
+   "ground_m": -2542.7764000000016,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4984303652968037,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4984303652968037,
+     "energyWhPerW": 3699.649797911905,
+     "longestDarkHours": 358.0,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4976805077268976,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4976805077268976,
+     "energyWhPerW": 3705.4972297173044,
+     "longestDarkHours": 358.0,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.5176084474885845,
+     "earthFraction": 1.0,
+     "bothFraction": 0.5176084474885845,
+     "energyWhPerW": 3825.091212932462,
+     "longestDarkHours": 357.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "ce6",
+   "name": "Chang'e 6 Apollo basin",
+   "operator": "CNSA",
+   "latitude_deg": "-41.6385",
+   "longitude_deg": "206.0148",
+   "landed_date": "2024-06-01",
+   "coordinates_source": "https://lroc.im-ldi.com/images/1374",
+   "notes": "LROC position (+-30 m)",
+   "ground_m": -5254.7701904,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.5156392694063927,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3766.684665626114,
+     "longestDarkHours": 358.5,
+     "longestCommsGapHours": 8760.0,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8760.0
+    },
+    "2028": {
+     "sunlitFraction": 0.4890571192759769,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3602.678552466048,
+     "longestDarkHours": 359.0,
+     "longestCommsGapHours": 8784.25,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8784.25
+    },
+    "2029": {
+     "sunlitFraction": 0.5029680365296804,
+     "earthFraction": 0.0,
+     "bothFraction": 0.0,
+     "energyWhPerW": 3694.816420924695,
+     "longestDarkHours": 359.0,
+     "longestCommsGapHours": 8760.0,
+     "dsnLinkFraction": 0.0,
+     "longestDsnLinkGapHours": 8760.0
+    }
+   }
+  },
+  {
+   "id": "ch3",
+   "name": "Chandrayaan-3 Shiv Shakti",
+   "operator": "ISRO",
+   "latitude_deg": "-69.3741",
+   "longitude_deg": "32.32",
+   "landed_date": "2023-08-23",
+   "coordinates_source": "https://lroc.im-ldi.com/images/1314",
+   "notes": "LROC position near the south pole (about 600 km away), outside the 85 deg S maps",
+   "ground_m": 528.5316719999996,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.4706906392694064,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4706906392694064,
+     "energyWhPerW": 3951.244099273794,
+     "longestDarkHours": 380.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4987335287588582,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4987335287588582,
+     "energyWhPerW": 4197.5634585792395,
+     "longestDarkHours": 380.75,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.4808219178082192,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4808219178082192,
+     "energyWhPerW": 4036.739121829888,
+     "longestDarkHours": 380.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  },
+  {
+   "id": "slim",
+   "name": "SLIM near Shioli crater",
+   "operator": "JAXA",
+   "latitude_deg": "-13.316",
+   "longitude_deg": "25.251",
+   "landed_date": "2024-01-19",
+   "coordinates_source": "https://satnews.com/2024/01/28/nasas-lro-spots-japans-moon-lander/",
+   "notes": "Position from NASA's LRO image release of 24 Jan 2024",
+   "ground_m": -913.3106880000103,
+   "years": {
+    "2027": {
+     "sunlitFraction": 0.46686643835616437,
+     "earthFraction": 1.0,
+     "bothFraction": 0.46686643835616437,
+     "energyWhPerW": 2700.9028745190944,
+     "longestDarkHours": 369.25,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9797374429223744,
+     "longestDsnLinkGapHours": 1.5
+    },
+    "2028": {
+     "sunlitFraction": 0.4922446423997496,
+     "earthFraction": 1.0,
+     "bothFraction": 0.4922446423997496,
+     "energyWhPerW": 2834.7868190083645,
+     "longestDarkHours": 369.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9844039047158266,
+     "longestDsnLinkGapHours": 1.0
+    },
+    "2029": {
+     "sunlitFraction": 0.47919520547945205,
+     "earthFraction": 1.0,
+     "bothFraction": 0.47919520547945205,
+     "energyWhPerW": 2791.726020680439,
+     "longestDarkHours": 369.5,
+     "longestCommsGapHours": 0.0,
+     "dsnLinkFraction": 0.9879280821917809,
+     "longestDsnLinkGapHours": 0.75
+    }
+   }
+  }
+ ]
+}
