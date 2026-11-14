@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  web:
+    name: Browser engine tests and site build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Browser engine against the Python fixtures, and the app helpers
+        run: cd web && npm test
+      - name: Build the site
+        run: |
+          bash scripts/build_site.sh
+          test -f public/index.html
+
+  python:
+    name: Python tests that need no downloaded data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --python 3.12
+      # Tests that need data/external/ (scripts/fetch_data.sh, about 2.5 GB) skip themselves. The browser flows
+      # (tests/test_web_flows.py) need Chrome and are left to a local run.
+      - run: uv run pytest -q --ignore=tests/test_web_flows.py
