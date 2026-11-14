@@ -24,7 +24,7 @@ test("the file name comes from the path, a bare folder being the home page", () 
 test("the bar lists the pages of the design and Evidence is not among them", () => {
   const html = headerHtml("index.html");
   assert.deepEqual(LEARN_ITEMS.map((i) => i.label), ["Map", "Explorer", "Whole Moon"]);
-  assert.deepEqual(PLAN_ITEMS.map((i) => i.label), ["Planner", "Rank", "Delay impact", "Compare landings", "Compare sites"]);
+  assert.deepEqual(PLAN_ITEMS.map((i) => i.label), ["Planner", "Ranker", "Delay Analyzer", "Compare landings", "Compare sites"]);
   assert.ok(!/evidence/i.test(html));
   assert.equal([...html.matchAll(/class="menu-item"/g)].length, 16); // eight items in the dropdowns and eight in the phone menu
 });

@@ -91,7 +91,7 @@ async function main() {
   $("csv").addEventListener("click", () => rows.length && download(rankCsv(rows), "ranked-spots.csv"));
   wireCopyLink($("copy-link"));
   mountIcons();
-  mountHelp("How to use Rank", [
+  mountHelp("How to use Ranker", [
     ["Set the question", "<p>Click the orange words in the sentence to change what you are asking: the day and time, the mission length, the limits for darkness and DSN visibility, the mast height and the dispersion radius.</p>"],
     ["Read the results", "<p>Spots are ranked best first. Valid = spot + dispersion points pass the whole mission. The bar is the longest night and its marker the limit. Press the pin icon to keep a landing for Compare landings, or select a row to open it in the Planner. CLPS landers are not ranked.</p>"],
   ]);

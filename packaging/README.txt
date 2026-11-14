@@ -4,9 +4,9 @@ LunaZen Landing Site Navigator: packaged build
 Start here
 ----------
 Live app:        https://lunazen-v1.vercel.app
-30-second demo:  DEMO_URL
+Overview video:  https://youtu.be/3MQQRflfRCE
 The guide:       lunazen_guide.pdf (the user guide; page 1 is a one-page summary)
-Video series:    PLAYLIST_URL (six videos on the south polar sky; they explain the concepts, not the app)
+Video series:    https://www.youtube.com/playlist?list=PLct6-XOWUjH8 (six videos on the south polar sky; they explain the concepts, not the app)
 
 This folder is the app. It runs in the browser and sends nothing anywhere. The pages need a web server (browsers block the data
 files over file://), so start the small local server below, then open http://localhost:8000/ in a recent Chrome, Edge, Firefox

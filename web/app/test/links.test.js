@@ -22,7 +22,7 @@ test("guide links open the stored page", () => {
 
 test("the addresses come from one file and start as placeholders", async () => {
   const cfg = await import("../site-config.js");
-  for (const key of ["REPO_URL", "APP_URL", "DEMO_URL", "PLAYLIST_URL", "EXPLORER_VIDEO_URL"]) assert.equal(typeof cfg[key], "string");
+  for (const key of ["REPO_URL", "APP_URL", "OVERVIEW_URL", "PLAYLIST_URL", "EXPLORER_VIDEO_URL"]) assert.equal(typeof cfg[key], "string");
   assert.equal(VIDEO_PLAYLIST, cfg.PLAYLIST_URL);
   assert.equal(VIDEO_POLAR_SKY, cfg.EXPLORER_VIDEO_URL);
 });

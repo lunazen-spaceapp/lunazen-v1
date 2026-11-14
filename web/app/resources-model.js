@@ -39,8 +39,8 @@ export const scopeLead = (catalog) => `All ${EVALUATED_SITES} NASA PGDA south-po
 
 // The video series "The south polar sky": titles and running times. Video 1's title comes from site-config.js.
 export const PLAYLIST_DURATIONS = ["4:26", "4:31", "6:09", "9:57", "3:49", "9:53"];
-export const PLAYLIST_TITLES = [null, "The Sun and Earth in the South Polar Sky", "Under the Hood, Part 1: The J2000 Frame", "Under the Hood, Part 2: Following One SPICE Call",
-  "Under the Hood, Part 3: The Sun in the Sky of a Landing Site", "Under the Hood, Part 4: Horizons and Visibility at the Lunar South Pole"];
+export const PLAYLIST_TITLES = [null, "The Sun and Earth in the South Polar Sky", "Under the Hood, Part 1 of 4: The J2000 Frame", "Under the Hood, Part 2 of 4: Following One SPICE Call",
+  "Under the Hood, Part 3 of 4: The Sun in the Sky of a Landing Site", "Under the Hood, Part 4 of 4: Horizons and Visibility at the Lunar South Pole"];
 const seconds = (mmss) => { const [m, s] = mmss.split(":").map(Number); return m * 60 + s; };
 export const playlistMinutes = (durations = PLAYLIST_DURATIONS) => Math.round(durations.reduce((a, d) => a + seconds(d), 0) / 60);
 export const playlistLine = (durations = PLAYLIST_DURATIONS) => `Technical playlist · ${durations.length} videos · about ${playlistMinutes(durations)} minutes`;

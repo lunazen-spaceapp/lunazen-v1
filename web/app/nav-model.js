@@ -11,8 +11,8 @@ export const LEARN_ITEMS = [
 ];
 export const PLAN_ITEMS = [
   { label: "Planner", href: "planner.html", desc: "Find viable touchdown dates based on sunlight and Earth line-of-sight" },
-  { label: "Rank", href: "rank.html", desc: "Every spot for one landing time, best first" },
-  { label: "Delay impact", href: "windows.html", desc: "See if a site still works after a launch slip, or find the next open window" },
+  { label: "Ranker", href: "rank.html", desc: "Every spot for one landing time, best first" },
+  { label: "Delay Analyzer", href: "windows.html", desc: "See if a site still works after a launch slip, or find the next open window" },
   { label: "Compare landings", href: "compare.html", desc: "Pinned landings side by side, shifted by any number of days" },
   { label: "Compare sites", href: "sidebyside.html", desc: "Two to four sites over the same dates, and how sure we can be" },
 ];

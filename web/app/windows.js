@@ -109,7 +109,7 @@ async function main() {
   addEventListener("resize", () => paint());
   wireCopyLink($("copy-link"));
   wireRows("windows.html");
-  mountHelp("How to use Delay impact", [
+  mountHelp("How to use Delay Analyzer", [
     ["Set the question", "<p>Click the orange words in the sentence to change what you are asking: the spot or day, the mission length, the limits for darkness and DSN visibility, the mast height and the dispersion radius.</p>"],
     ["Read the results", "<p>The chart counts the valid spots for each landing day of the year; click or drag it to choose the day. The table shows how the selected target and the best backup spots fare if touchdown slips. Click any row to open that spot in the Planner.</p>"],
   ]);

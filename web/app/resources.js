@@ -3,7 +3,7 @@
 
 import { SiteCatalog } from "../engine/index.js";
 import { GUIDE_PAGE_COUNT, hasUrl, hydrateLinks } from "./links.js";
-import { DEMO_URL, PLAYLIST_URL, REPO_URL, VIDEO_1_TITLE, VIDEO_URLS } from "./site-config.js";
+import { OVERVIEW_URL, PLAYLIST_URL, REPO_URL, VIDEO_1_TITLE, VIDEO_URLS } from "./site-config.js";
 import { PLAYLIST_DURATIONS, PLAYLIST_TITLES, evidenceRows, playlistLine, scopeLead, siteCounts } from "./resources-model.js";
 
 const $ = (id) => document.getElementById(id);
@@ -36,12 +36,12 @@ function renderVideos() {
   const titles = PLAYLIST_TITLES.map((t) => t ?? VIDEO_1_TITLE);
   $("playlist-line").textContent = playlistLine();
   $("playlist").innerHTML = titles.map((t, i) => `<li><span class="n">${i + 1}</span>${hasUrl(VIDEO_URLS[i]) ? `<a class="t" href="${esc(VIDEO_URLS[i])}" target="_blank" rel="noopener">${esc(t)}</a>` : `<span class="t">${esc(t)}</span>`}<span class="d">${PLAYLIST_DURATIONS[i]}</span></li>`).join("");
-  const live = hasUrl(DEMO_URL);
-  for (const id of ["pitch-box", "pitch-link"]) $(id).insertAdjacentHTML("beforeend", PLAY);
-  $("pitch-box").hidden = live;
-  $("pitch-link").hidden = !live;
-  $("pitch-watch").hidden = !live;
-  if (live) { external($("pitch-link"), DEMO_URL); external($("pitch-watch"), DEMO_URL); }
+  const live = hasUrl(OVERVIEW_URL);
+  for (const id of ["overview-box", "overview-link"]) $(id).insertAdjacentHTML("beforeend", PLAY);
+  $("overview-box").hidden = live;
+  $("overview-link").hidden = !live;
+  $("overview-watch").hidden = !live;
+  if (live) { external($("overview-link"), OVERVIEW_URL); external($("overview-watch"), OVERVIEW_URL); }
   const list = $("playlist-link");
   list.hidden = !hasUrl(PLAYLIST_URL);
   if (hasUrl(PLAYLIST_URL)) external(list, PLAYLIST_URL);

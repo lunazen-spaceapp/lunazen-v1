@@ -87,10 +87,10 @@ def test_the_menus_list_every_page(page, base):
     bar = [e.text_content().strip() for e in page.locator(".nav > a.nav-link, .nav > .nav-group > button").all()]
     assert bar == ["Home", "Learn", "Plan", "Resources", "Contact"]
     assert labels(page, "learn") == ["Map", "Explorer", "Whole Moon"]
-    assert labels(page, "plan") == ["Planner", "Rank", "Delay impact", "Compare landings", "Compare sites"]
+    assert labels(page, "plan") == ["Planner", "Ranker", "Delay Analyzer", "Compare landings", "Compare sites"]
     assert "Evidence" not in page.locator(".nav").text_content()
     open_menu(page, "Plan")
-    for text, target in [("Rank", "rank.html"), ("Delay impact", "windows.html"), ("Compare landings", "compare.html"), ("Planner", "planner.html")]:
+    for text, target in [("Ranker", "rank.html"), ("Delay Analyzer", "windows.html"), ("Compare landings", "compare.html"), ("Planner", "planner.html")]:
         page.locator("#menu-plan .menu-item", has_text=text).click()
         page.wait_for_url(re.compile(re.escape(target)))
         open_menu(page, "Plan")
@@ -443,14 +443,14 @@ def test_resources_is_an_accordion_with_computed_figures(page, base):
     assert "a 13-site polar catalogue on 5 m terrain maps, plus 15 historical" in page.locator("#scope-lead").text_content()
     assert page.locator("#site-table").get_attribute("href") == "https://github.com/lunazen-spaceapp/lunazen-v1/blob/main/data/sites/site_selection.csv"
     assert [e.text_content() for e in page.locator(".covers h3").all()] == ["Capabilities", "Limitations", "Roadmap"]
-    # Videos: every address is set, so the pitch, the six titles and the playlist are links
+    # Videos: every address is set, so the overview video, the six titles and the playlist are links
     page.locator("#videos .acc-head").click()
     assert page.locator("#playlist-line").text_content() == "Technical playlist · 6 videos · about 39 minutes"
     assert page.locator("#playlist li").count() == 6 and "Exploring the Lunar South Pole: Why Everyone Is Going, and Why It Is Hard to Land" in page.locator("#playlist li").first.text_content()
-    assert [a.get_attribute("href") for a in page.locator("#playlist a").all()] == [f"https://youtube.com/video{n}" for n in range(1, 7)]
-    assert page.locator("#playlist-link").get_attribute("href") == "https://youtube.com/playlist1" and page.locator("#playlist-link").get_attribute("target") == "_blank"
-    assert page.locator("#pitch-link").get_attribute("href") == "https://youtube.com/video0" and page.locator("#pitch-watch").get_attribute("href") == "https://youtube.com/video0"
-    assert page.locator("#pitch-link").is_visible() and page.locator("#pitch-box").is_hidden()
+    assert [a.get_attribute("href") for a in page.locator("#playlist a").all()] == ["https://youtu.be/" + v for v in ("3kn46h4qcFw", "L2yvlqkywV4", "J5H6E7JQpmQ", "Zk7FiL-1gY8", "XrTkE3Rt2X8", "uFc0DskIiX4")]
+    assert page.locator("#playlist-link").get_attribute("href") == "https://www.youtube.com/playlist?list=PLct6-XOWUjH8" and page.locator("#playlist-link").get_attribute("target") == "_blank"
+    assert page.locator("#overview-link").get_attribute("href") == "https://youtu.be/3MQQRflfRCE" and page.locator("#overview-watch").get_attribute("href") == "https://youtu.be/3MQQRflfRCE"
+    assert page.locator("#overview-link").is_visible() and page.locator("#overview-box").is_hidden()
     assert page.locator("footer.site-footer").text_content().strip() == FOOTER
 
 
@@ -1985,8 +1985,8 @@ def test_the_figure_groups_sit_side_by_side_on_a_large_screen(page, base):
 
 # ---- The Plan pages (update 6)
 
-PLAN_PAGES = [("planner", "Planner", "Landing window search · Single spot"), ("rank", "Rank", "Candidate spot ranking · Single epoch"),
-              ("windows", "Delay impact", "Launch delay sensitivity · Single spot"), ("compare", "Compare landings", "Touchdown window comparison"),
+PLAN_PAGES = [("planner", "Planner", "Landing window search · Single spot"), ("rank", "Ranker", "Candidate spot ranking · Single epoch"),
+              ("windows", "Delay Analyzer", "Launch delay sensitivity · Single spot"), ("compare", "Compare landings", "Touchdown window comparison"),
               ("sidebyside", "Compare sites", "Site comparison · Shared window")]
 
 

@@ -5,9 +5,9 @@
 At the lunar south pole the Sun never climbs more than a few degrees, so a ridge far away can decide whether a lander has light and a line to Earth. LunaZen shows, for a spot and a date, when the Sun and Earth are above the real terrain horizon and how long the dark lasts, and it helps you choose where and when to land. It runs entirely in your browser. A NASA Space Apps 2026 project.
 
 - **App:** https://lunazen-v1.vercel.app
-- **30-second demo:** DEMO_URL
+- **Overview video:** https://youtu.be/3MQQRflfRCE
 - **User Guide:** [lunazen_guide.pdf](docs/learn/lunazen_guide.pdf), 7 pages; page 1 is a one-page summary
-- **Videos:** PLAYLIST_URL (a six-part series on the south polar sky)
+- **Videos:** https://www.youtube.com/playlist?list=PLct6-XOWUjH8 (a six-part series on the south polar sky)
 
 ![The Home page: the Sun and Earth over the Site01-1 skyline through March 2027](docs/media/hero.gif)
 
@@ -15,7 +15,7 @@ At the lunar south pole the Sun never climbs more than a few degrees, so a ridge
 
 - **Ask a planning question as a sentence.** The Planner tests every landing time at a spot, and at 12 points up to 100 m around it, and answers in about a second.
 - **See what would make a landing work.** Another spot, a lander that tolerates a longer night, or a tighter landing radius, each checked by the engine.
-- **Re-plan when the date slips.** Delay impact shows the next valid window and the backup spots; Compare landings shifts pinned landings by any number of days.
+- **Re-plan when the date slips.** Delay Analyzer shows the next valid window and the backup spots; Compare landings shifts pinned landings by any number of days.
 - **Look at the real sky.** The Explorer draws the Sun and Earth on the terrain skyline, in a panorama and in 3D, with countdowns to the next sunset and Earthset and exportable visibility windows.
 - **Browse the whole pole.** The Map shows NASA's sunlight and Earth-visibility maps with 13 sites and 67 spots; add your own point and save it.
 - **Compare.** Rank all 67 spots for one landing, or put two to four sites side by side.
@@ -29,7 +29,7 @@ The Plan pages open on Site01-1 from 15 March 2027.
 
 1. **Planner.** 18% of landing times are valid at the spot, but none within 100 m. Under *Constraint relaxation*, DM2-4 has 9 valid landing days from 7 April; a lander that tolerates 253 h of darkness would work; so would a 50 m radius (2 landing times, from 9 April). Press the pin icon on a landing.
 2. **Compare landings.** Enter 9 days and press *Rerun pins* to see what a nine-day slip does to each pin.
-3. **Delay impact.** Site01-1 is not valid on 15 March (DSN visibility is too low); the next valid window opens on 2 April, 18 days later.
+3. **Delay Analyzer.** Site01-1 is not valid on 15 March (DSN visibility is too low); the next valid window opens on 2 April, 18 days later.
 4. **Explorer.** Site01-1 on 1 March 2027 at 06:15 UTC: the Sun sets in 36 h 15 min and Earth rises in 3 d 18 h.
 5. **Map.** In *Plot a point*, pick a point inside a mapped site for its four figures, then *Save to My points*.
 
@@ -82,7 +82,7 @@ Space Apps 2026 asks every team to describe its use of AI tools. We used Anthrop
 
 - **Code and documentation:** Claude Code [wrote / co-wrote] the Python reference, the browser engine and app, the tests and the guide, working from our design, decisions and reviews. [`CLAUDE.md`](CLAUDE.md) is the guide we gave it.
 - **Review and testing:** Claude reviewed and tested the app in the browser against the challenge statement, and suggested fixes.
-- **Videos:** [describe how the video series and the demo were made, including any AI narration or visuals].
+- **Videos:** [describe how the video series and the overview video were made, including any AI narration or visuals].
 
 Every number the app shows is computed by the engine from NASA data and checked against independent sources, so the results do not depend on trusting the AI that wrote the code.
 
