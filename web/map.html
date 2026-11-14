@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Map</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="mp">
+
+  <header class="mp-head">
+    <div class="mp-kicker">
+      <p class="label accent">Learn · Map</p>
+      <button type="button" id="help-open" class="mp-help" aria-haspopup="dialog"><svg width="15" height="15" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.9 6.9 C6.9 5.7 7.8 4.9 9 4.9 C10.2 4.9 11.1 5.7 11.1 6.8 C11.1 8.3 9 8.4 9 10.2 M9 12.8 V13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>How to use the map</button>
+    </div>
+    <h1>Illumination and Earth visibility at the lunar south pole</h1>
+    <p class="mp-sub">Compare long-term solar illumination and Earth visibility using NASA south-pole maps—select a candidate spot from the directory or plot your own coordinates.</p>
+  </header>
+
+  <div class="mp-grid">
+    <section class="mp-map" aria-label="Map">
+      <div class="mp-bar">
+        <div role="group" aria-label="Map layer" class="mp-seg">
+          <button type="button" id="layer-sun" aria-pressed="true">Sunlight</button>
+          <button type="button" id="layer-earth" aria-pressed="false">Earth in view</button>
+        </div>
+        <div id="legend" class="mp-legend" aria-hidden="true"></div>
+        <div role="group" aria-label="Zoom" class="mp-zoom">
+          <button type="button" id="zoom-in" aria-label="Zoom in"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M13 13 L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8.5 5.8 V11.2 M5.8 8.5 H11.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+          <button type="button" id="zoom-out" aria-label="Zoom out"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M13 13 L18 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5.8 8.5 H11.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+          <button type="button" id="reset" class="word">Reset</button>
+        </div>
+      </div>
+      <div class="map-wrap" id="map-wrap">
+        <canvas id="map" role="img" aria-label="South-pole map with candidate landing spots"></canvas>
+        <div id="pick-banner" class="pick-banner" role="status" hidden><b>Click inside a highlighted area to place your point</b> · Esc to cancel</div>
+        <div id="pick-hint" class="pick-hint" aria-hidden="true" hidden></div>
+        <div id="map-tip" class="lane-tip" hidden></div>
+      </div>
+      <p id="source" class="mp-credit">NASA LOLA 18.6-year visibility map (Mazarico et al. 2011) · Spots from NASA's 60 m map, slope ≤ 10°</p>
+    </section>
+
+    <aside class="mp-side" aria-label="Sites, plotted point and my points">
+      <div class="mp-side-in">
+        <div role="tablist" aria-label="Sidebar" class="tabs">
+          <button type="button" role="tab" id="tab-sites" aria-controls="panel-sites" aria-selected="true">Sites</button>
+          <button type="button" role="tab" id="tab-point" aria-controls="panel-point" aria-selected="false" tabindex="-1">Plot a point</button>
+          <button type="button" role="tab" id="tab-mine" aria-controls="panel-mine" aria-selected="false" tabindex="-1">My points <span id="mine-count" class="mp-count">0/5</span></button>
+        </div>
+
+        <div role="tabpanel" id="panel-sites" aria-labelledby="tab-sites" class="tabpanel sites-panel">
+          <div class="sites-tools">
+            <div class="search"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.6 10.6 L14.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><input type="search" id="site-search" aria-label="Find a site or spot" placeholder="Search 13 sites, 67 spots…" autocomplete="off"></div>
+            <div class="sort"><span class="sort-label">Sort by</span>
+              <div role="group" aria-label="Sort sites" class="mp-seg small">
+                <button type="button" id="sort-sun" aria-pressed="true">Sunlight</button><button type="button" id="sort-earth" aria-pressed="false">Earth</button><button type="button" id="sort-name" aria-pressed="false">A–Z</button>
+              </div>
+            </div>
+            <p id="sites-count" class="sites-count" role="status"></p>
+          </div>
+          <div class="sites-head"><span>Site</span><span class="sites-head-r">Sunlit % · Earth in view % <button type="button" class="hint" aria-label="About these figures" data-hint="Best values among the site's candidate spots for 2027, at a 2 m mast: the share of the year in sunlight, and the share with Earth in view.">ⓘ</button></span></div>
+          <div class="sites-scroll">
+            <ul id="site-list" class="site-list"></ul>
+            <p id="no-results" class="no-results" hidden></p>
+            <p class="lander-head">Flown landers (CLPS)</p>
+            <ul id="lander-list" class="lander-list"></ul>
+          </div>
+          <div class="sites-legend"><span><i class="bar"></i>Sun</span><span><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.8" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M1.4 7 H12.6 M7 1.2 C4.9 3.2 4.9 10.8 7 12.8 M7 1.2 C9.1 3.2 9.1 10.8 7 12.8" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>Earth in view</span><span>Share of 2027</span></div>
+        </div>
+
+        <div role="tabpanel" id="panel-point" aria-labelledby="tab-point" class="tabpanel point-panel" hidden></div>
+        <div role="tabpanel" id="panel-mine" aria-labelledby="tab-mine" class="tabpanel mine-panel" hidden></div>
+      </div>
+    </aside>
+
+    <section id="band" class="band" aria-label="Selected spot" hidden></section>
+  </div>
+  </main>
+  <div id="band-cue-wrap" class="band-cue-wrap" role="status" aria-live="polite"><button type="button" id="band-cue" class="band-cue" hidden></button></div>
+  <footer class="site-footer"></footer>
+  <dialog id="help-dialog" class="mp-dialog" aria-labelledby="help-title">
+    <div class="mp-dialog-in">
+      <div class="mp-dialog-head"><h2 id="help-title">How to use the map</h2><button type="button" id="help-close" aria-label="Close">×</button></div>
+      <div id="map-help"></div>
+    </div>
+  </dialog>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/map.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>
