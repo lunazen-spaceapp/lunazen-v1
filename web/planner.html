@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Planner</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="mp exp plan">
+
+  <header class="mp-head">
+    <div class="mp-kicker">
+      <p class="label accent">Plan · Planner</p>
+      <div class="mp-tools">
+        <button id="copy-link" class="mp-icon" type="button" data-icon aria-label="Copy link" title="Copy link"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8.5" height="8.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 3.5V3A1 1 0 0 0 9.5 2H3A1 1 0 0 0 2 3V9.5A1 1 0 0 0 3 10.5H3.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <button type="button" id="help-open" class="mp-help" aria-haspopup="dialog"><svg width="15" height="15" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.9 6.9 C6.9 5.7 7.8 4.9 9 4.9 C10.2 4.9 11.1 5.7 11.1 6.8 C11.1 8.3 9 8.4 9 10.2 M9 12.8 V13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>How to use the Planner</button>
+      </div>
+    </div>
+    <h1 id="title">Landing window search · Single spot</h1>
+    <p class="mp-sub" id="subtitle">Evaluate candidate touchdown times at a target spot—plus 12 surrounding dispersion points—against darkness survival and DSN visibility constraints.</p>
+  </header>
+
+  <section class="exp-scenario lz-query" aria-label="The question">
+    <p class="lz-sentence" id="sentence"></p>
+    <nav class="lz-trail" id="trail" aria-label="Query history"></nav>
+  </section>
+
+  <div id="verdict" class="lz-verdict-slot"></div>
+
+  <div id="results" class="results-wrap" aria-label="Results">
+    <section class="pl-panel" aria-label="Touchdown windows">
+      <div class="pl-panel-head">
+        <h2 class="exp-h">Touchdown windows · 6-hour steps (UTC)</h2>
+        <div class="pl-side"><span id="heat-summary"></span><span class="pl-icons"><button type="button" id="csv" class="exp-ico" aria-label="Export CSV" title="Export CSV"></button> <button type="button" id="ics" class="exp-ico" aria-label="Export to calendar" title="Export to calendar"></button></span></div>
+      </div>
+      <div class="scrollx" id="heat"></div>
+      <div id="legend"></div>
+      <p id="status" class="pl-note" role="status"></p>
+    </section>
+
+    <div class="plan-rows">
+      <section id="take" class="exp-snap" data-row="relax" aria-live="polite" hidden>
+        <button type="button" class="exp-snap-head" aria-controls="take-body"><span class="t">Constraint relaxation</span><span class="s" id="take-sub"></span></button>
+        <div class="exp-snap-body" id="take-body" hidden><div id="take-list"></div><p id="take-progress" class="pl-note" hidden></p></div>
+      </section>
+
+      <section id="runs-panel" class="exp-snap" data-row="runs" aria-label="Valid windows" hidden>
+        <button type="button" class="exp-snap-head" aria-controls="runs-body"><span class="t">Valid windows</span><span class="s" id="runs-sub"></span></button>
+        <div class="exp-snap-body" id="runs-body" hidden><div id="runs"></div></div>
+      </section>
+
+      <section id="mission-row" class="exp-snap" data-row="mission" aria-label="Mission profile summary">
+        <button type="button" class="exp-snap-head" aria-controls="mission-body"><span class="t">Mission profile summary</span><span class="s" id="mission-sub"></span></button>
+        <div class="exp-snap-body" id="mission-body" hidden>
+          <p class="exp-h" id="mission-title"></p>
+          <canvas id="mission-chart" class="event-chart" role="img" aria-label="Sun, Earth and DSN in view from the landing to the end of the mission"></canvas>
+          <div class="exp-legend"><span><i class="sw sun"></i>Sun up</span><span><i class="sw earth"></i>Earth in view</span><span><i class="sw dsn"></i>DSN in view</span><span><i class="sw part"></i>Partly visible</span></div>
+          <p id="mission-facts" class="pl-note"></p>
+          <div id="tiles"></div>
+        </div>
+      </section>
+
+      <section id="ring-row" class="exp-snap" data-row="ring" aria-label="Dispersion analysis">
+        <button type="button" class="exp-snap-head" aria-controls="ring-body"><span class="t" id="ring-title">Dispersion analysis</span><span class="s" id="ring-sub"></span></button>
+        <div class="exp-snap-body" id="ring-body" hidden><div id="ring" class="pl-ring"></div></div>
+      </section>
+    </div>
+
+    <section class="na" aria-label="Next actions">
+      <h2 class="exp-h">Next actions</h2>
+      <div class="na-btns" id="actions">
+        <a class="exp-btn" id="explorer-link" href="explorer.html">Inspect sky view</a>
+        <a class="exp-btn" id="rank-link" href="rank.html">Compare spots</a>
+        <a class="exp-btn" id="slip-link" href="windows.html">Launch delay sensitivity</a>
+      </div>
+    </section>
+  </div>
+
+  <div id="pop" class="lz-pop" hidden role="dialog" aria-label="Edit the question"></div>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/planner.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>
