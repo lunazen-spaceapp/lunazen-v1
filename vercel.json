@@ -1,0 +1,11 @@
+{
+  "buildCommand": "bash scripts/build_site.sh",
+  "outputDirectory": "public",
+  "framework": null,
+  "cleanUrls": false,
+  "headers": [
+    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] },
+    { "source": "/(lunazen_guide|how_the_app_works).pdf", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] },
+    { "source": "/(.*)\\.bin", "headers": [{ "key": "Content-Type", "value": "application/octet-stream" }] }
+  ]
+}

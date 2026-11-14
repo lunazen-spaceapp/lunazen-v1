@@ -1,0 +1,8 @@
+# The build needs only web/, docs/learn/lunazen_guide.pdf and scripts/.
+data/external/
+notebooks/
+tests/
+validation/
+pipeline/
+.venv/
+uv.lock
