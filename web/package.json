@@ -1,0 +1,9 @@
+{
+  "name": "lunazen-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test engine/test/*.test.js app/test/*.test.js",
+    "serve": "node serve.mjs"
+  }
+}
