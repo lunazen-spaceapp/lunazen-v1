@@ -1,0 +1,302 @@
+{
+ "source": "https://apollojournals.org/alsj/alsj-sunangles.html",
+ "missions": [
+  "Apollo 11",
+  "Apollo 12",
+  "Apollo 14"
+ ],
+ "points": 10,
+ "maxAbsDeg": 0.118,
+ "rmsDeg": 0.06553472362038311,
+ "meanDeg": -0.034199999999999994,
+ "timeScaleCheckHours": {
+  "Apollo 11": 0.011,
+  "Apollo 12": 0.043,
+  "Apollo 14": 0.003,
+  "Apollo 15": 0.042,
+  "Apollo 16": 0.007,
+  "Apollo 17": 0.033
+ },
+ "rows": [
+  {
+   "mission": "Apollo 11",
+   "event": "EVA-1 start",
+   "getHours": 109.0,
+   "utc": "1969-07-21T02:32:00",
+   "sourceDeg": 14.0,
+   "oursDeg": 13.882,
+   "differenceDeg": -0.118,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 11",
+   "event": "EVA-1 end",
+   "getHours": 111.75,
+   "utc": "1969-07-21T05:17:00",
+   "sourceDeg": 15.4,
+   "oursDeg": 15.282,
+   "differenceDeg": -0.118,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 12",
+   "event": "EVA-1 start",
+   "getHours": 115.25,
+   "utc": "1969-11-19T11:37:00",
+   "sourceDeg": 7.5,
+   "oursDeg": 7.528,
+   "differenceDeg": 0.028,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 12",
+   "event": "EVA-1 end",
+   "getHours": 119.25,
+   "utc": "1969-11-19T15:37:00",
+   "sourceDeg": 9.5,
+   "oursDeg": 9.55,
+   "differenceDeg": 0.05,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 12",
+   "event": "EVA-2 start",
+   "getHours": 131.5,
+   "utc": "1969-11-20T03:52:00",
+   "sourceDeg": 15.8,
+   "oursDeg": 15.741,
+   "differenceDeg": -0.059,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 12",
+   "event": "EVA-2 end",
+   "getHours": 135.5,
+   "utc": "1969-11-20T07:52:00",
+   "sourceDeg": 17.8,
+   "oursDeg": 17.762,
+   "differenceDeg": -0.038,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 14",
+   "event": "EVA-1 start",
+   "getHours": 113.5,
+   "utc": "1971-02-05T14:33:02",
+   "sourceDeg": 13.0,
+   "oursDeg": 12.999,
+   "differenceDeg": -0.001,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 14",
+   "event": "EVA-1 end",
+   "getHours": 118.5,
+   "utc": "1971-02-05T19:33:02",
+   "sourceDeg": 15.5,
+   "oursDeg": 15.523,
+   "differenceDeg": 0.023,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 14",
+   "event": "EVA-2 start",
+   "getHours": 131.25,
+   "utc": "1971-02-06T08:18:02",
+   "sourceDeg": 22.0,
+   "oursDeg": 21.96,
+   "differenceDeg": -0.04,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 14",
+   "event": "EVA-2 end",
+   "getHours": 135.75,
+   "utc": "1971-02-06T12:48:02",
+   "sourceDeg": 24.3,
+   "oursDeg": 24.231,
+   "differenceDeg": -0.069,
+   "comparable": true
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-1 start",
+   "getHours": 119.75,
+   "utc": "1971-07-31T13:19:00",
+   "sourceDeg": 19.6,
+   "oursDeg": 18.831,
+   "differenceDeg": -0.769,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-1 end",
+   "getHours": 126.25,
+   "utc": "1971-07-31T19:49:00",
+   "sourceDeg": 22.9,
+   "oursDeg": 21.751,
+   "differenceDeg": -1.149,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-2 start",
+   "getHours": 142.25,
+   "utc": "1971-08-01T11:49:00",
+   "sourceDeg": 31.0,
+   "oursDeg": 28.857,
+   "differenceDeg": -2.143,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-2 end",
+   "getHours": 149.5,
+   "utc": "1971-08-01T19:04:00",
+   "sourceDeg": 34.7,
+   "oursDeg": 32.027,
+   "differenceDeg": -2.673,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-3 start",
+   "getHours": 163.25,
+   "utc": "1971-08-02T08:49:00",
+   "sourceDeg": 41.7,
+   "oursDeg": 37.922,
+   "differenceDeg": -3.778,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 15",
+   "event": "EVA-3 end",
+   "getHours": 168.25,
+   "utc": "1971-08-02T13:49:00",
+   "sourceDeg": 44.3,
+   "oursDeg": 40.018,
+   "differenceDeg": -4.282,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-1 start",
+   "getHours": 119.0,
+   "utc": "1972-04-21T16:54:00",
+   "sourceDeg": 22.2,
+   "oursDeg": 22.018,
+   "differenceDeg": -0.182,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-1 end",
+   "getHours": 126.0,
+   "utc": "1972-04-21T23:54:00",
+   "sourceDeg": 25.7,
+   "oursDeg": 25.513,
+   "differenceDeg": -0.187,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-2 start",
+   "getHours": 142.5,
+   "utc": "1972-04-22T16:24:00",
+   "sourceDeg": 34.1,
+   "oursDeg": 33.729,
+   "differenceDeg": -0.371,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-2 end",
+   "getHours": 150.0,
+   "utc": "1972-04-22T23:54:00",
+   "sourceDeg": 37.9,
+   "oursDeg": 37.451,
+   "differenceDeg": -0.449,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-3 start",
+   "getHours": 165.5,
+   "utc": "1972-04-23T15:24:00",
+   "sourceDeg": 45.8,
+   "oursDeg": 45.102,
+   "differenceDeg": -0.698,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 16",
+   "event": "EVA-3 end",
+   "getHours": 171.25,
+   "utc": "1972-04-23T21:09:00",
+   "sourceDeg": 48.7,
+   "oursDeg": 47.923,
+   "differenceDeg": -0.777,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-1 start",
+   "getHours": 117.0,
+   "utc": "1972-12-11T23:53:00",
+   "sourceDeg": 15.3,
+   "oursDeg": 15.229,
+   "differenceDeg": -0.071,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-1 end",
+   "getHours": 124.25,
+   "utc": "1972-12-12T07:08:00",
+   "sourceDeg": 19.0,
+   "oursDeg": 18.654,
+   "differenceDeg": -0.346,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-2 start",
+   "getHours": 140.5,
+   "utc": "1972-12-12T23:23:00",
+   "sourceDeg": 27.3,
+   "oursDeg": 26.281,
+   "differenceDeg": -1.019,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-2 end",
+   "getHours": 148.25,
+   "utc": "1972-12-13T07:08:00",
+   "sourceDeg": 31.2,
+   "oursDeg": 29.887,
+   "differenceDeg": -1.313,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-3 start",
+   "getHours": 163.5,
+   "utc": "1972-12-13T22:23:00",
+   "sourceDeg": 39.0,
+   "oursDeg": 36.897,
+   "differenceDeg": -2.103,
+   "comparable": false
+  },
+  {
+   "mission": "Apollo 17",
+   "event": "EVA-3 end",
+   "getHours": 170.75,
+   "utc": "1972-12-14T05:38:00",
+   "sourceDeg": 42.6,
+   "oursDeg": 40.178,
+   "differenceDeg": -2.422,
+   "comparable": false
+  }
+ ]
+}
