@@ -1,0 +1,9 @@
+{
+ "site": "Blue Ghost 1 (Mare Crisium)",
+ "reference": "SLDEM2015 window ahead of the global map",
+ "horizon_rms_deg": 1.1681448671100496,
+ "horizon_max_abs_deg": 3.23,
+ "first_sunset_global_utc": "2025-03-16T20:24:00",
+ "first_sunset_fine_utc": "2025-03-16T19:29:00",
+ "sunset_error_h": 0.9166666666666666
+}

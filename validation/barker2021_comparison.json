@@ -1,0 +1,170 @@
+{
+ "period": [
+  "2024-01-01T00:00:00",
+  "2026-01-01T00:00:00"
+ ],
+ "spacing_m": 10.0,
+ "summary": {
+  "ours_1m_range": [
+   73.29918968779134,
+   78.91736356660807
+  ],
+  "ours_5m_range": [
+   82.90998248991274,
+   90.33229549834473
+  ],
+  "ours_minus_fig19_1m_pp": [
+   0.2991896877913405,
+   1.4360078632152096
+  ],
+  "nominal_1m_fig19_approx": [
+   73.0,
+   78.0
+  ],
+  "nominal_1m_fig19_by_roi": [
+   76.0,
+   76.0,
+   73.0,
+   77.5,
+   75.5,
+   77.5,
+   73.5
+  ],
+  "clone_p1_1m_table2": [
+   67.0,
+   71.0
+  ],
+  "clone_p1_5m_table2": [
+   83.0,
+   89.0
+  ]
+ },
+ "rois": [
+  {
+   "roi": 1,
+   "centroid_m": [
+    -11589.932432432432,
+    -12466.351351351352
+   ],
+   "points": 72,
+   "1m": {
+    "average_illumination_pct": 77.34179342923106,
+    "lcip_days_mean": 157.55381944444446,
+    "lcsp_days_mean": 13.34259259259259
+   },
+   "5m": {
+    "average_illumination_pct": 90.33229549834473,
+    "lcip_days_mean": 226.84548611111111,
+    "lcsp_days_mean": 4.561921296296297
+   }
+  },
+  {
+   "roi": 2,
+   "centroid_m": [
+    -11487.191358024691,
+    -12556.75925925926
+   ],
+   "points": 54,
+   "1m": {
+    "average_illumination_pct": 77.43600786321521,
+    "lcip_days_mean": 171.19753086419755,
+    "lcsp_days_mean": 13.478395061728396
+   },
+   "5m": {
+    "average_illumination_pct": 89.16018702327094,
+    "lcip_days_mean": 222.6604938271605,
+    "lcsp_days_mean": 6.6111111111111125
+   }
+  },
+  {
+   "roi": 3,
+   "centroid_m": [
+    -11352.777777777777,
+    -12503.981481481482
+   ],
+   "points": 29,
+   "1m": {
+    "average_illumination_pct": 73.29918968779134,
+    "lcip_days_mean": 170.42672413793105,
+    "lcsp_days_mean": 16.617816091954023
+   },
+   "5m": {
+    "average_illumination_pct": 86.36428962730572,
+    "lcip_days_mean": 232.45545977011497,
+    "lcsp_days_mean": 6.232758620689654
+   }
+  },
+  {
+   "roi": 4,
+   "centroid_m": [
+    -11286.644144144144,
+    -12166.5990990991
+   ],
+   "points": 106,
+   "1m": {
+    "average_illumination_pct": 78.91736356660807,
+    "lcip_days_mean": 201.41470125786165,
+    "lcsp_days_mean": 9.25314465408805
+   },
+   "5m": {
+    "average_illumination_pct": 88.70956090402318,
+    "lcip_days_mean": 232.5279088050314,
+    "lcsp_days_mean": 3.848663522012578
+   }
+  },
+  {
+   "roi": 5,
+   "centroid_m": [
+    -11101.059322033898,
+    -11945.466101694916
+   ],
+   "points": 76,
+   "1m": {
+    "average_illumination_pct": 76.75554605594549,
+    "lcip_days_mean": 173.83826754385964,
+    "lcsp_days_mean": 7.989035087719299
+   },
+   "5m": {
+    "average_illumination_pct": 86.34418192315518,
+    "lcip_days_mean": 220.52302631578948,
+    "lcsp_days_mean": 4.202302631578947
+   }
+  },
+  {
+   "roi": 6,
+   "centroid_m": [
+    -10798.247126436781,
+    -11735.316091954022
+   ],
+   "points": 83,
+   "1m": {
+    "average_illumination_pct": 78.70609874220612,
+    "lcip_days_mean": 184.6129518072289,
+    "lcsp_days_mean": 9.06475903614458
+   },
+   "5m": {
+    "average_illumination_pct": 87.57599950807172,
+    "lcip_days_mean": 221.32028112449797,
+    "lcsp_days_mean": 3.904116465863454
+   }
+  },
+  {
+   "roi": 7,
+   "centroid_m": [
+    -10227.378048780487,
+    -11557.987804878048
+   ],
+   "points": 55,
+   "1m": {
+    "average_illumination_pct": 74.00210243496618,
+    "lcip_days_mean": 116.8810606060606,
+    "lcsp_days_mean": 9.770454545454545
+   },
+   "5m": {
+    "average_illumination_pct": 82.90998248991274,
+    "lcip_days_mean": 144.83106060606062,
+    "lcsp_days_mean": 5.320454545454545
+   }
+  }
+ ]
+}

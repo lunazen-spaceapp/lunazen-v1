@@ -1,0 +1,171 @@
+{
+ "spots": 67,
+ "years": [
+  "2027",
+  "2028",
+  "2029"
+ ],
+ "mast_m": 2.0,
+ "year_to_year_change": {
+  "sun_points": {
+   "median": 0.7892865668798237,
+   "max": 2.8795294166876886,
+   "max_spot": "DM2-3"
+  },
+  "earth_points": {
+   "median": 5.653304244975594,
+   "max": 14.623287671232873,
+   "max_spot": "DM2-4"
+  },
+  "dark_hours": {
+   "median": 1.0,
+   "max": 143.5,
+   "max_spot": "Site20-1"
+  }
+ },
+ "mast_1_to_10_m_sun_points": {
+  "median": 6.272831050228311,
+  "max": 25.068493150684933,
+  "min": 0.3025114155251196
+ },
+ "within_100_m_sun_points": {
+  "median": 36.044520547945204,
+  "max": 82.29737442922375,
+  "min": 0.3595890410958944,
+  "Site01-1": {
+   "min": 33.31335616438356,
+   "max": 90.82762557077626,
+   "swing": 57.5142694063927,
+   "points": 13
+  }
+ },
+ "extremes_2027": {
+  "sun_share": {
+   "least": {
+    "spot": "DM2-5",
+    "value": 0.4884417808219178
+   },
+   "most": {
+    "spot": "Site01-2",
+    "value": 0.9077340182648402
+   }
+  },
+  "earth_share": {
+   "least": {
+    "spot": "Site04-5",
+    "value": 0.4055936073059361
+   },
+   "most": {
+    "spot": "DM2-4",
+    "value": 0.9823915525114155
+   }
+  },
+  "sun_and_earth_up_together": {
+   "most": {
+    "spot": "Site23-5",
+    "value": 0.5607591324200913
+   }
+  },
+  "dsn_link_share": {
+   "least": {
+    "spot": "Site04-5",
+    "value": 0.4036815068493151
+   },
+   "most": {
+    "spot": "DM2-4",
+    "value": 0.9630993150684931
+   }
+  },
+  "longest_dsn_gap_hours": {
+   "shortest": {
+    "spot": "DM2-4",
+    "value": 49.25
+   },
+   "longest": {
+    "spot": "Site04-5",
+    "value": 388.75
+   }
+  }
+ },
+ "shortest_longest_night": {
+  "1 m, 2027": {
+   "spot": "Site01-2",
+   "hours": 133.25,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "1 m, 2028": {
+   "spot": "Site01-2",
+   "hours": 134.5,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "1 m, 2029": {
+   "spot": "Site01-2",
+   "hours": 130.5,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "2 m, 2027": {
+   "spot": "Site04-1",
+   "hours": 82.0,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "2 m, 2028": {
+   "spot": "Site04-1",
+   "hours": 83.0,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "2 m, 2029": {
+   "spot": "Site04-1",
+   "hours": 81.0,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "5 m, 2027": {
+   "spot": "Site04-2",
+   "hours": 63.25,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "5 m, 2028": {
+   "spot": "Site04-2",
+   "hours": 63.75,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "5 m, 2029": {
+   "spot": "Site04-2",
+   "hours": 63.0,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "10 m, 2027": {
+   "spot": "Site04-2",
+   "hours": 62.75,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "10 m, 2028": {
+   "spot": "Site04-2",
+   "hours": 63.25,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  },
+  "10 m, 2029": {
+   "spot": "Site04-2",
+   "hours": 62.5,
+   "spots_within_Blue Ghost 1": 0,
+   "spots_within_VIPER": 0
+  }
+ },
+ "shortest_longest_night_any_point_2_m": {
+  "spot": "Site04-1",
+  "hours": 64.75,
+  "points": 2613,
+  "points_within_Blue Ghost 1": 0,
+  "points_within_VIPER": 0
+ }
+}

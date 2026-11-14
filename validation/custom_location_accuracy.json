@@ -1,0 +1,63 @@
+{
+ "source": "browser grids (20 m site crop + 480 m far field) vs stored horizons, spots inside a tile interior, 2 m mast, 2027",
+ "spots": 67,
+ "skipped_outside_interior": [],
+ "horizon_rms_deg": 0.11860290200616887,
+ "horizon_p95_abs_deg": 0.22532722893456017,
+ "sun_share_pp": {
+  "median": 0.3053652968036502,
+  "p90": 1.460045662100455,
+  "max": 2.6170091324200895
+ },
+ "longest_dark_h": {
+  "median": 0.75,
+  "p90": 11.6,
+  "max": 226.25
+ },
+ "single_coarse_map": {
+  "1": {
+   "pixel_m": 80,
+   "rms_deg": 0.36622234970802103,
+   "p95_abs_deg": 0.7894461619532731,
+   "sun_pp_median": 0.6735159817351621,
+   "sun_pp_p90": 3.7283105022830987,
+   "sun_pp_max": 11.669520547945211,
+   "dark_h_median": 4.0,
+   "dark_h_p90": 89.54999999999998,
+   "trace_s": 0.17094254849562004
+  },
+  "2": {
+   "pixel_m": 160,
+   "rms_deg": 0.642102277607237,
+   "p95_abs_deg": 1.4987901909422616,
+   "sun_pp_median": 1.5582191780821875,
+   "sun_pp_p90": 12.503424657534248,
+   "sun_pp_max": 21.852168949771688,
+   "dark_h_median": 29.75,
+   "dark_h_p90": 232.14999999999998,
+   "trace_s": 0.15942777448625706
+  },
+  "3": {
+   "pixel_m": 240,
+   "rms_deg": 1.017204735272025,
+   "p95_abs_deg": 2.2572967935854478,
+   "sun_pp_median": 4.643264840182648,
+   "sun_pp_p90": 15.524543378995432,
+   "sun_pp_max": 46.33847031963471,
+   "dark_h_median": 51.5,
+   "dark_h_p90": 293.5,
+   "trace_s": 0.15510374396594603
+  },
+  "4": {
+   "pixel_m": 320,
+   "rms_deg": 1.5234330303960537,
+   "p95_abs_deg": 3.009897145989692,
+   "sun_pp_median": 8.795662100456624,
+   "sun_pp_p90": 23.81506849315068,
+   "sun_pp_max": 37.26883561643836,
+   "dark_h_median": 120.5,
+   "dark_h_p90": 314.05,
+   "trace_s": 0.15316863202337008
+  }
+ }
+}
