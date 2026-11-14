@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Whole Moon</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="mp moon">
+
+  <header class="mp-head">
+    <div class="mp-kicker">
+      <p class="label accent">Learn · Whole Moon</p>
+      <div class="mp-tools">
+        <button id="copy-link" class="mp-icon" type="button" data-icon aria-label="Copy link" title="Copy link"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8.5" height="8.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 3.5V3A1 1 0 0 0 9.5 2H3A1 1 0 0 0 2 3V9.5A1 1 0 0 0 3 10.5H3.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <button type="button" id="help-open" class="mp-help" aria-haspopup="dialog"><svg width="15" height="15" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.9 6.9 C6.9 5.7 7.8 4.9 9 4.9 C10.2 4.9 11.1 5.7 11.1 6.8 C11.1 8.3 9 8.4 9 10.2 M9 12.8 V13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>How to use this page</button>
+      </div>
+    </div>
+    <h1>Lunar sky conditions across landing sites</h1>
+    <p class="mp-sub">Compare solar elevation, lunar night duration, and Earth visibility at historical landing sites (Apollo to Chandrayaan-3) against the south pole at the same moment.</p>
+  </header>
+
+  <div class="moon-grid">
+    <section class="moon-mapcol" aria-label="Map of the Moon with the landing sites">
+      <div class="moon-bar">
+        <div role="group" aria-label="Side of the Moon" class="mp-seg">
+          <button type="button" id="view-near" aria-pressed="true">Near side</button>
+          <button type="button" id="view-far" aria-pressed="false">Far side</button>
+        </div>
+        <p id="moon-side-note" class="moon-side-note"></p>
+      </div>
+      <div class="moon-wrap">
+        <canvas id="moon-map" class="moon-map" role="img" aria-label="Map of one side of the Moon with its landing sites marked. Choose one, or use the site list."></canvas>
+        <a class="moon-bandlink" href="map.html">South-polar sites are on the Map →</a>
+        <span id="moon-corner" class="moon-corner"></span>
+      </div>
+      <p class="mp-credit">NASA LRO LOLA global elevation, about 474 m per pixel; dark is low, light is high</p>
+    </section>
+
+    <aside class="moon-side" aria-label="Site and comparison">
+      <section class="moon-panel" aria-labelledby="site-h">
+        <h2 id="site-h">Landing site</h2>
+        <label for="site" class="sr-only">Landing site</label>
+        <select id="site" class="moon-select"></select>
+        <p id="site-info" class="moon-info"></p>
+      </section>
+      <section class="moon-panel tight" aria-labelledby="moon-table-h">
+        <h2 id="moon-table-h"></h2>
+        <table id="moon-table" class="moon-table"><thead><tr><th scope="col"><span class="sr-only">Measure</span></th><th scope="col" id="th-site"></th><th scope="col" id="th-pole"></th></tr></thead><tbody></tbody></table>
+      </section>
+    </aside>
+  </div>
+
+  <p id="moon-story" class="moon-story"></p>
+
+  <section class="moon-sky" aria-labelledby="sky-h">
+    <h2 id="sky-h" class="moon-h">The sky at both places, at the same moment</h2>
+    <div class="moon-play" role="group" aria-label="Playback">
+      <label class="moon-start">Start (UTC)<input id="start" type="date"></label>
+      <button id="play" type="button" class="moon-playbtn" aria-pressed="false" title="Play through the window"><svg class="i-play" width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1 L11 7 L1 13 Z" fill="currentColor"/></svg><svg class="i-pause" width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path d="M2 1 H5 V13 H2 Z M7 1 H10 V13 H7 Z" fill="currentColor"/></svg><span id="play-text">Play</span></button>
+      <input id="time" type="range" min="0" value="0" aria-label="Time within the 30-day window">
+      <output id="moon-time" class="moon-time" aria-live="off"></output>
+      <a id="explorer-link" class="moon-explore" href="explorer.html">Open in the Explorer →</a>
+    </div>
+    <div class="moon-skies">
+      <figure class="moon-figure"><figcaption id="moon-site-title"></figcaption><canvas id="pano-site" class="moon-pano" role="img" aria-label="Horizon panorama at the chosen site with the Sun and Earth"></canvas></figure>
+      <figure class="moon-figure"><figcaption id="moon-pole-title"></figcaption><canvas id="pano-pole" class="moon-pano" role="img" aria-label="Horizon panorama at the south-pole reference spot with the Sun and Earth"></canvas></figure>
+    </div>
+    <p class="moon-caption">Same moment in both. Each picture has its own height scale (see its corner); the pole's is stretched because the Sun and Earth stay near its horizon.</p>
+    <p class="moon-foot">* Site01-1 (Connecting Ridge) serves as the south-polar reference for non-polar site comparisons.</p>
+  </section>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <dialog id="help-dialog" class="mp-dialog" aria-labelledby="help-title">
+    <div class="mp-dialog-in">
+      <div class="mp-dialog-head"><h2 id="help-title">How to use this page</h2><button type="button" id="help-close" aria-label="Close">×</button></div>
+      <div id="moon-help"></div>
+    </div>
+  </dialog>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/moon.js"></script>
+</body>
+</html>
