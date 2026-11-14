@@ -1,0 +1,25 @@
+{
+ "ground_m": -3652.266300390625,
+ "events_utc": {
+  "terrain_sunset_begins": "2025-03-16T18:20:50",
+  "sun_centre_behind_terrain": "2025-03-16T18:54:40",
+  "terrain_sunset_complete": "2025-03-16T19:28:30",
+  "flat_horizon_sunset_complete": "2025-03-16T20:44:10"
+ },
+ "landing_plus_346h_utc": "2025-03-16T18:34:00",
+ "final_transmission_utc": "2025-03-16T23:15:00",
+ "nasa_sunset_implied_utc": "2025-03-16T18:15:00",
+ "hours_from_terrain_sunset_to_final": 3.7750000011258655,
+ "sun_at_landing_plus_346h": {
+  "elevation_deg": 0.7729038091259254,
+  "margin_above_terrain_deg": 0.16081918547048835
+ },
+ "terrain_toward_sunset": {
+  "horizon_deg": 0.612084623655437,
+  "distance_km": 0.800000011920929
+ },
+ "earth_elevation_deg": [
+  26.950358688484773,
+  27.379589751325526
+ ]
+}
