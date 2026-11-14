@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Compare landings</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="mp exp plan">
+
+  <header class="mp-head">
+    <div class="mp-kicker">
+      <p class="label accent">Plan · Compare landings</p>
+      <div class="mp-tools">
+        <button id="copy-link" class="mp-icon" type="button" data-icon aria-label="Copy link" title="Copy link"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="5.5" y="5.5" width="8.5" height="8.5" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 3.5V3A1 1 0 0 0 9.5 2H3A1 1 0 0 0 2 3V9.5A1 1 0 0 0 3 10.5H3.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <button type="button" id="help-open" class="mp-help" aria-haspopup="dialog"><svg width="15" height="15" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6.9 6.9 C6.9 5.7 7.8 4.9 9 4.9 C10.2 4.9 11.1 5.7 11.1 6.8 C11.1 8.3 9 8.4 9 10.2 M9 12.8 V13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>How to use Compare landings</button>
+      </div>
+    </div>
+    <h1>Touchdown window comparison</h1>
+    <p class="mp-sub">Compare up to four pinned touchdown candidates—preserving their mission parameters—and evaluate all options against a common launch slip.</p>
+  </header>
+
+  <section id="shift-bar" class="exp-scenario lz-shift" aria-label="Shift the dates" hidden>
+    <div class="shift-line">
+      <label for="shift">Shift all pins by</label>
+      <input id="shift" type="number" min="-120" max="120" step="1" placeholder="e.g. 9" aria-describedby="shift-note">
+      <span>days</span>
+      <button id="rerun" type="button" class="exp-btn fill" disabled>Rerun pins</button>
+      <button id="reset" type="button" class="exp-btn" hidden>Back to original dates</button>
+    </div>
+    <span id="shift-note" class="pl-note">Each pin is re-tested with its own query at the shifted date.</span>
+  </section>
+
+  <div id="cards" class="lz-cards" aria-live="polite"></div>
+  <p id="status" class="sr-only" role="status"></p>
+
+  <div class="pl-foot-row" id="actions" hidden>
+    <span id="pinned-count" class="pl-foot"></span>
+    <span class="pl-icons"><button type="button" id="csv" class="exp-ico" aria-label="Export CSV" title="Export CSV"></button> <button type="button" id="ics" class="exp-ico" aria-label="Export to calendar" title="Export to calendar"></button></span>
+  </div>
+  <p class="pl-foot" id="version"></p>
+
+  <section class="na" id="next" aria-label="Next actions" hidden>
+    <h2 class="exp-h">Next actions</h2>
+    <div class="na-btns">
+      <a class="exp-btn" href="sidebyside.html">Compare sites</a>
+      <a class="exp-btn" href="planner.html">Open Planner</a>
+    </div>
+  </section>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/compare.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>
