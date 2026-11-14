@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Resources</title>
+  <meta name="description" content="The technical foundation behind LunaZen: operating guides, video walkthroughs, public NASA elevation and ephemeris datasets, benchmark checks, and model boundaries.">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="resources">
+
+    <header class="res-head">
+      <div class="res-inner">
+        <p class="label accent">Resources</p>
+        <h1>Documentation, data, and validation</h1>
+        <p class="lead">The technical foundation behind LunaZen: operating guides, video walkthroughs, public NASA elevation and ephemeris datasets, benchmark checks, and model boundaries.</p>
+      </div>
+    </header>
+
+    <div class="res-body">
+      <div class="res-inner">
+        <div class="acc">
+      <section id="guides" class="acc-row">
+        <h2><button type="button" class="acc-head" aria-expanded="false" aria-controls="guides-panel"><svg class="plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 V17 M3 10 H17" fill="none" stroke-width="1.6"/></svg><svg class="minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 H17" fill="none" stroke-width="1.6"/></svg><span class="acc-title"><span>User guide</span></span></button></h2>
+        <div id="guides-panel" class="acc-panel" hidden>
+          <article class="guide-row">
+            <img src="figures/guide_page1.png" width="150" height="212" alt="Page 1 of the LunaZen User Guide: a one-page summary">
+            <div class="guide-text">
+              <h3>LunaZen User Guide <span class="meta">· PDF · <span id="guide-pages"></span> pages</span></h3>
+              <p class="strong">An in-depth manual on LunaZen features, validation benchmarks, and step-by-step walkthroughs.</p>
+              <ul><li>Includes a 1-page quick start guide, feature overview, validation logic, and model limits.</li></ul>
+              <a class="arrow-link" data-guide="summary" data-guide-text="Open the guide →" href="lunazen_guide.pdf">Open the guide →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="evidence" class="acc-row">
+        <h2><button type="button" class="acc-head" aria-expanded="false" aria-controls="evidence-panel"><svg class="plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 V17 M3 10 H17" fill="none" stroke-width="1.6"/></svg><svg class="minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 H17" fill="none" stroke-width="1.6"/></svg><span class="acc-title"><span>Validation benchmarks and comparative data</span></span></button></h2>
+        <div id="evidence-panel" class="acc-panel" hidden>
+          <div class="frame"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+            <div class="table-scroll">
+              <table class="rtable wide-table">
+                <thead><tr><th scope="col">Validation check</th><th scope="col">Comparative source</th><th scope="col">Measured result</th><th scope="col">Threshold limit</th><th scope="col">Status</th></tr></thead>
+                <tbody id="evidence-rows"></tbody>
+              </table>
+            </div>
+          </div>
+          <p id="evidence-status" class="res-note" role="status" hidden></p>
+        </div>
+      </section>
+      <section id="data" class="acc-row">
+        <h2><button type="button" class="acc-head" aria-expanded="false" aria-controls="data-panel"><svg class="plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 V17 M3 10 H17" fill="none" stroke-width="1.6"/></svg><svg class="minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 H17" fill="none" stroke-width="1.6"/></svg><span class="acc-title"><span>Public data sources</span><span class="acc-sub">NASA, JPL &amp; international datasets integrated into LunaZen</span></span></button></h2>
+        <div id="data-panel" class="acc-panel" hidden>
+          <div class="frame"><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
+            <div class="table-scroll">
+              <table class="rtable data-table narrow-table">
+                <thead><tr><th scope="col">Category</th><th scope="col">Source dataset &amp; methodology</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row" class="cat">Sun and Earth positions</th><td><div class="src-cell"><span class="src-text">JPL's DE440 ephemeris through NAIF SPICE, verified against JPL Horizons<span class="tag method">NAIF SPICE</span></span><span class="tag source">[NASA/JPL]</span></div></td></tr>
+                  <tr><th scope="row" class="cat">Terrain</th><td><div class="src-cell"><span class="src-text">LRO's laser altimeter (LOLA), NASA's 5 m south-pole site maps and SLDEM2015<span class="tag method">Up to 5 m</span></span><span class="tag source">[LRO · Kaguya]</span></div></td></tr>
+                  <tr><th scope="row" class="cat">Deep Space Network</th><td><div class="src-cell"><span class="src-text">Antenna positions from NASA/JPL document 810-005</span><span class="tag source">[NASA/JPL]</span></div></td></tr>
+                  <tr><th scope="row" class="cat">Dates &amp; coverage</th><td><div class="src-cell"><span class="src-text">Yearly figures on the Map precomputed for 2027, 2028 and 2029; any other date from 2024 to 2043 computed on request<span class="tag method">JPL DE440</span></span></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="scope" class="acc-row">
+        <h2><button type="button" class="acc-head" aria-expanded="false" aria-controls="scope-panel"><svg class="plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 V17 M3 10 H17" fill="none" stroke-width="1.6"/></svg><svg class="minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 H17" fill="none" stroke-width="1.6"/></svg><span class="acc-title"><span>Scope</span><span class="acc-sub">Coverage, limitations and roadmap</span></span></button></h2>
+        <div id="scope-panel" class="acc-panel" hidden>
+          <p id="scope-lead" class="scope-lead">&nbsp;</p>
+          <div id="site-figures" class="figures"></div>
+          <a id="site-table" class="arrow-link small" href="#scope" hidden>View all 27 evaluated sites →</a>
+          <div class="covers">
+            <div>
+              <h3>Capabilities</h3>
+              <dl>
+                <div><dt>Real-terrain sky:</dt><dd>67 spots on 5 m maps, any date 2024–2043.</dd></div>
+                <div><dt>Darkness limits:</dt><dd>The longest night compared with a limit: 5 h, 50 h or your own.</dd></div>
+                <div><dt>Sun energy:</dt><dd>The light a Sun-tracking upright array would collect; no power, battery or thermal model.</dd></div>
+              </dl>
+            </div>
+            <div>
+              <h3>Limitations</h3>
+              <dl>
+                <div><dt>Coarser beyond the pole:</dt><dd>The 12 historical and global sites use a 474 m map, so sunrise and sunset can be up to an hour off.</dd></div>
+                <div><dt>Custom points:</dt><dd>Only inside the 13 site areas; the longest night is typically within an hour of the 5 m result.</dd></div>
+              </dl>
+            </div>
+            <div>
+              <h3>Roadmap</h3>
+              <dl>
+                <div><dt>Finer terrain beyond the pole:</dt><dd>Detailed maps for the 12 non-polar sites, and custom points anywhere near the pole.</dd></div>
+                <div><dt>Landing dispersion:</dt><dd>250 m and 500 m touchdown rings, and a landing ellipse.</dd></div>
+                <div><dt>Lander power data:</dt><dd>When a mission publishes it.</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="videos" class="acc-row">
+        <h2><button type="button" class="acc-head" aria-expanded="false" aria-controls="videos-panel"><svg class="plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3 V17 M3 10 H17" fill="none" stroke-width="1.6"/></svg><svg class="minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 H17" fill="none" stroke-width="1.6"/></svg><span class="acc-title"><span>Videos</span></span></button></h2>
+        <div id="videos-panel" class="acc-panel" hidden>
+          <div class="videos">
+            <article>
+              <p class="kicker">Pitch video · 30 seconds</p>
+              <a id="pitch-link" class="video-box" aria-label="Play the 30-second pitch video" href="#videos" hidden><img src="figures/pitch_frame.jpg" alt="" width="1150" height="522"></a>
+              <div id="pitch-box" class="video-box"><img src="figures/pitch_frame.jpg" alt="" width="1150" height="522"></div>
+              <h3>LunaZen in 30 seconds</h3>
+              <p class="desc">Watch our quick mission-briefing pitch and product demo.</p>
+              <a id="pitch-watch" class="arrow-link small" href="#videos" hidden>Watch the pitch →</a>
+            </article>
+            <article>
+              <p id="playlist-line" class="kicker"></p>
+              <h3>The south polar sky</h3>
+              <p class="desc">Dive into the orbital mechanics, solar and Earth geometry, and the mathematical modelling behind our polar site calculations.</p>
+              <ol id="playlist" class="playlist"></ol>
+              <a id="playlist-link" class="arrow-link small" href="#videos" hidden>Watch the playlist on YouTube<svg width="15" height="15" viewBox="0 0 15 15" aria-hidden="true"><path d="M8.5 1.5 H13.5 V6.5 M13.5 1.5 L7 8 M11.5 9 V13.5 H1.5 V3.5 H6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/resources.js"></script>
+</body>
+</html>
