@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator — Evidence</title>
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1">
+
+  <div class="page-head">
+    <h1>Why you can trust the numbers</h1>
+    <p>Each step is checked against an independent source, and the limits are stated. <a data-guide="method" data-guide-text="The guide explains each check: Section 5, p. {n}" href="lunazen_guide.pdf">The guide explains each check: Section 5</a><span data-video-wrap hidden> · <a data-video="playlist" href="#">Video series: how the positions are computed</a></span></p>
+  </div>
+
+  <div id="headline" class="stats five"></div>
+  <p id="status" class="note" role="status"></p>
+
+  <div class="view-tabs evidence-tabs" role="tablist" aria-label="Checks">
+    <button type="button" role="tab" data-tab="scorecard" aria-selected="true">Scorecard</button>
+    <button type="button" role="tab" data-tab="directions" aria-selected="false">Directions</button>
+    <button type="button" role="tab" data-tab="illumination" aria-selected="false">Illumination</button>
+    <button type="button" role="tab" data-tab="barker" aria-selected="false">Barker 2021</button>
+    <button type="button" role="tab" data-tab="missions" aria-selected="false">Real landings</button>
+    <button type="button" role="tab" data-tab="maps" aria-selected="false">Elevation maps</button>
+    <button type="button" role="tab" data-tab="limits" aria-selected="false">Limits</button>
+  </div>
+
+  <section class="evidence-panel" data-panel="scorecard">
+    <h2>Seven checks, each against something we did not produce</h2>
+    <p class="note">Tolerances are set in the code (<code>validation/thresholds.py</code> in the <a data-repo href="#">source repository</a>) and the tests fail if a result leaves them. A row marked <em>reported</em> has no tolerance because the comparison is not like for like; the other tabs explain why.</p>
+    <div class="table-wrap"><table id="scorecard" class="scorecard"></table></div>
+    <h2>How the code itself is tested</h2>
+    <ul class="limits">
+      <li><strong>Exact answers.</strong> Geometry, disk fractions and horizon tracing are checked on cases with a known result: a smooth sphere's horizon dip, a disk cut by a flat horizon, synthetic terrain.</li>
+      <li><strong>Hand calculations.</strong> The worked examples in the overview PDF, the Sun-array energy and the DSN geometry are checked against numbers worked by hand.</li>
+      <li><strong>Locked results.</strong> The headline numbers at the real sites are fixed in tests. A change must be explained by a physical cause, never by editing the expected value.</li>
+      <li><strong>Outside evidence.</strong> The table above, re-run whenever the pipeline changes.</li>
+      <li><strong>Browser against Python.</strong> The Python is the reference; fixtures it writes are held by <code>npm test</code> (in the source repository), and the button on the Directions tab re-computes every spot in your browser.</li>
+    </ul>
+  </section>
+
+  <section class="evidence-panel" data-panel="directions" hidden>
+    <h2>Sun and Earth directions vs JPL Horizons
+      <details class="howto"><summary>Help</summary><ul>
+        <li>4 lunar sites, a check every 37 days, 2024–2030.</li>
+        <li>The table shows the worst angle between our direction and JPL's.</li>
+        <li>1″ = 1/3600°. The Sun's disk is about 1900″ across.</li>
+        <li>This checks our geometry (time, frames, light time, parallax), not JPL's ephemeris: both rest on JPL's data.</li>
+      </ul></details>
+    </h2>
+    <div class="table-wrap"><table id="jpl"></table></div>
+    <h2>This browser vs the Python reference</h2>
+    <p class="note">Recompute 2027 for every candidate spot here and compare.</p>
+    <p><button id="recheck" class="run" type="button">Re-check in this browser</button></p>
+    <p id="recheck-result" class="note" role="status"></p>
+  </section>
+
+  <section class="evidence-panel" data-panel="illumination" hidden>
+    <div class="two-col">
+      <div>
+        <h2>Long-term illumination vs NASA's maps</h2>
+        <canvas id="plot-illumination" class="scatter" aria-label="Our simulated average visibility against NASA's published values at 26 points"></canvas>
+        <ul id="illumination-text" class="bullets note"></ul>
+      </div>
+      <div>
+        <h2>All candidate spots</h2>
+        <canvas id="plot-spots" class="scatter" aria-label="Our 2027 visibility with a 2 m mast against NASA's 18.6-year map at all 67 candidate spots"></canvas>
+        <ul id="spots-text" class="bullets note"></ul>
+      </div>
+    </div>
+    <div class="legend"><span style="--c:var(--sun)">Sun</span><span style="--c:var(--earth)">Earth</span><span style="--c:var(--zero)">perfect agreement</span></div>
+  </section>
+
+  <section class="evidence-panel" data-panel="barker" hidden>
+    <h2>A peer-reviewed benchmark: Barker et al. (2021)</h2>
+    <div id="barker"></div>
+  </section>
+
+  <section class="evidence-panel" data-panel="missions" hidden>
+    <div class="two-col">
+      <div>
+        <h2>Blue Ghost 1: the last sunset</h2>
+        <table id="bg1"></table>
+        <ul id="bg1-text" class="bullets note"></ul>
+      </div>
+      <div>
+        <h2>IM-1: an independent height check</h2>
+        <dl id="im1" class="summary"></dl>
+        <ul id="im1-text" class="bullets note"></ul>
+        <figure><img src="figures/missions.png" alt="Sun and Earth elevation after landing for IM-1 and Blue Ghost 1" loading="lazy"></figure>
+      </div>
+    </div>
+    <h2>Apollo: the Sun's angle in 1969 to 1971</h2>
+    <p id="apollo-intro" class="note"></p>
+    <div class="table-wrap"><table id="apollo"></table></div>
+    <ul id="apollo-text" class="bullets note"></ul>
+  </section>
+
+  <section class="evidence-panel" data-panel="maps" hidden>
+    <h2>Three elevation maps agree</h2>
+    <figure><img src="figures/dem_crosscheck.png" alt="Height differences between the 5 m, 20 m and 80 m elevation maps" loading="lazy"></figure>
+    <p class="note">The 5 m, 20 m and 80 m maps agree to about 1–1.5 m where they overlap. Projections, orientation and heights are read correctly.</p>
+  </section>
+
+  <section class="evidence-panel" data-panel="limits" hidden>
+    <h2>What the model does not do</h2>
+    <div class="table-wrap"><table class="limits-table">
+      <thead><tr><th scope="col">Limit</th><th scope="col">What it means for you</th><th scope="col">Pages it affects</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Small hazards:</strong> 5 m maps cover only the 13 NASA site tiles; beyond them the skyline uses 20 m, 80 m and 474 m maps, and nothing smaller than a pixel is resolved.</td><td>A boulder or a small crater at a spot is invisible to the model. Check landing hazards separately.</td><td>Map, Explorer, Planner, Rank, Compare</td></tr>
+        <tr><td><strong>Uniform Sun:</strong> no limb darkening.</td><td>Whether the Sun is up is unaffected. The first and last sliver of a sunrise is slightly dimmer in reality than shown.</td><td>Explorer, Planner</td></tr>
+        <tr><td><strong>Earth in view</strong> means any part of the disk. Every time is on a 15-minute grid.</td><td>A gap shorter than 15 minutes can be missed, and Earth counts as in view when only a sliver of it shows.</td><td>Explorer, Planner, Rank, Windows, Compare</td></tr>
+        <tr><td><strong>One map:</strong> no error ensemble (Barker et al. ran 100).</td><td>The skyline is the map's, not a range of possible skylines. The +0.25° test shows how much an error could matter.</td><td>Planner, Rank, Compare</td></tr>
+        <tr><td><strong>Earth in front of the Sun (eclipses):</strong> when Earth crosses the Sun as a lander sees it, the Sun is dimmed for a few hours, a few times a year. This is not modelled and could lengthen a dark stretch or darken a sunlit one.</td><td>A night can be a few hours longer, or a lit spell a few hours shorter, than the app says in a season when Earth crosses the Sun.</td><td>Explorer, Planner, Rank, Windows, Compare</td></tr>
+        <tr><td><strong>A darkness limit,</strong> not a power budget. Sun energy is light only (Wh per W of a Sun-tracking upright array, the same number as the hours of full Sun it collects); a Sun-tracking upright array suits the low polar Sun and understates the light at a high one; there is no lander power, battery or temperature model.</td><td>Passing a darkness limit does not mean a lander has enough power. Check it with the lander's thermal and power team.</td><td>Planner, Rank, Windows, Compare</td></tr>
+        <tr><td><strong>Mission terrain:</strong> 59 m at Blue Ghost 1, 20 m at IM-1 and IM-2.</td><td>The flown landers' results are only as sharp as those maps.</td><td>Explorer</td></tr>
+        <tr><td id="limit-away"><strong>Away from the pole:</strong> the 474 m global map only.</td><td>Sunrise and sunset there can be an hour or more off. Sun and Earth positions are exact.</td><td>Explorer, Whole Moon</td></tr>
+        <tr><td id="limit-custom"><strong>Custom points:</strong> a 20 m crop and a 480 m far field, not the 5 m map.</td><td>Sunlight is close to the 5 m result, but the longest night can be off by hours, and at worst by days.</td><td>Map, Explorer, Planner, Rank, Windows</td></tr>
+        <tr><td><strong>Times:</strong> a 0.1° horizon error can shift a polar sunrise by minutes to hours. Trust percentages more. The Explorer and the Planner test this directly by raising the skyline by 0.1° and 0.25°.</td><td>Trust shares and durations more than exact clock times.</td><td>Explorer, Planner, Rank</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="evidence-sources" aria-label="Scripts and references">
+    <p class="note">Scripts: <code>validation/</code> and <code>pipeline/export_evidence.py</code>, in the <a data-repo href="#">source repository</a> (not part of the packaged build). The guide, <a href="lunazen_guide.pdf">LunaZen: How the App Works</a> (How We Know It Is Right), explains each check.</p>
+    <p class="note">References: JPL Horizons; Mazarico et al. (2011); Barker et al. (2021); LROC (IM-1); Firefly Aerospace (Blue Ghost 1).</p>
+  </section>
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/evidence.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>

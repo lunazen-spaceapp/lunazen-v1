@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LunaZen Landing Site Navigator</title>
+  <meta name="description" content="Compare lunar south-pole landing sites and dates: the Sun and Earth against the real terrain horizon, nights and line of sight to Earth.">
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("lunazen-theme") || "dark"; } catch (e) { document.documentElement.dataset.theme = "dark"; }</script>
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="icon" href="app/favicon.svg">
+</head>
+<body class="wide">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"></header>
+  <main id="main" tabindex="-1" class="home">
+
+    <section class="home-head" aria-labelledby="home-title">
+      <p class="label accent">NASA Space Apps 2026 · Lunar Landing Site Navigator</p>
+      <h1 id="home-title">Optimize landing windows and sites at the lunar south pole</h1>
+      <p id="home-count" class="count">&nbsp;</p>
+    </section>
+
+    <div class="home-cols">
+      <div class="home-text">
+        <div>
+          <p class="label accent">The polar challenge</p>
+          <p class="body">At the lunar south pole, the Sun and Earth hover right near the horizon, so even faraway mountains can block sunlight and radio signals. Landing just a hundred meters off-target—or a few days late—can leave a spacecraft in the dark and cut off from Earth.</p>
+        </div>
+        <div>
+          <p class="label accent">Explore &amp; simulate</p>
+          <p class="body soft">Compare illumination duration, communication windows, and terrain occlusion across years of orbital geometry to identify viable mission windows.</p>
+        </div>
+      </div>
+
+      <figure class="home-view">
+        <p class="label">Skyline at <span class="accent">Site01-1 · Connecting Ridge</span></p>
+        <div class="pano-wrap">
+          <canvas id="panorama" role="img" aria-label="The skyline at Site01-1 with the Sun and Earth moving along their tracks over one lunar month, 1 to 30 March 2027"></canvas>
+          <button id="pano-toggle" class="pano-toggle" type="button" aria-label="Pause the animation" hidden></button>
+        </div>
+        <div class="pills">
+          <span class="pill sun"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle id="sun-dot" cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="pill-text" data-body="Sun"><span id="sun-text">Sun · behind the terrain</span></span></span>
+          <span class="pill earth"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle id="earth-dot" cx="6" cy="6" r="4.5" fill="currentColor" stroke="currentColor" stroke-width="1.6"/></svg><span class="pill-text" data-body="Earth"><span id="earth-text">Earth · in view</span></span></span>
+          <span class="when"><span id="when-text">&nbsp;</span><span class="sizer" aria-hidden="true">Day 30 of 30 · 30 Mar 2027 00:00 UTC</span></span>
+        </div>
+        <figcaption>
+          <span id="home-caption">&nbsp;</span>
+          <a class="arrow-link" href="explorer.html#spot=Site01-1&amp;mast=2&amp;days=30&amp;t=0">Open this site in the Explorer →</a>
+        </figcaption>
+      </figure>
+    </div>
+
+  </main>
+  <footer class="site-footer"></footer>
+  <script type="module" src="app/chrome.js"></script>
+  <script type="module" src="app/hint.js"></script>
+  <script type="module" src="app/home.js"></script>
+  <script type="module" src="app/guidelinks.js"></script>
+</body>
+</html>
