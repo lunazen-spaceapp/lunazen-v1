@@ -1,0 +1,111 @@
+% Preamble of the User Guide (lunazen_guide.tex).
+% Each document defines \doctitle and \docsubject before it inputs this file.
+% Fonts: Inter and TeX Gyre Pagella (XeLaTeX). Override the Inter folder with \interdir (see the line below).
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headsep=0.9cm,footskip=1.1cm]{geometry}
+\usepackage{amsmath,amssymb}
+\providecommand{\interdir}{/usr/share/fonts/opentype/inter/}% where Inter lives; override: xelatex "\def\interdir{/path/to/inter/}\input{how_the_app_works}"
+\usepackage{mathpazo}
+\usepackage[no-math]{fontspec}
+\setmainfont{texgyrepagella}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]% TeX Live's copy, found by file name
+\setsansfont{Inter}[Path=\interdir, Extension=.otf, UprightFont=*-Regular, BoldFont=*-SemiBold,
+  ItalicFont=*-Italic, BoldItalicFont=*-SemiBoldItalic, Scale=MatchLowercase, RawFeature={-calt}]% no contextual alternates: Inter swaps the hyphen in "Site01-1" for a glyph that copies out as a gap
+\newfontfamily\headfont{Inter}[Path=\interdir, Extension=.otf, UprightFont=*-Bold, Scale=MatchLowercase, RawFeature={-calt}]
+\setmonofont{DejaVuSansMono}[Extension=.ttf, UprightFont=*, BoldFont=DejaVuSansMono-Bold, ItalicFont=DejaVuSansMono-Oblique, BoldItalicFont=DejaVuSansMono-BoldOblique, Scale=0.8]% TeX Live's copy, found by file name
+\usepackage{microtype}
+\setlength{\emergencystretch}{2.5em}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage[font={small,sf},labelfont={bf},labelsep=period,justification=raggedright,singlelinecheck=false,skip=6pt]{caption}
+\graphicspath{{figures/}}
+
+% ---------------------------------------------------------------- colour
+% The app's palette: ink navy for structure, the Sun's amber and Earth's blue for meaning, vermilion only for "fails".
+\definecolor{ink}{HTML}{101A33}
+\definecolor{sky}{HTML}{2456C6}
+\definecolor{sun}{HTML}{E69F00}
+\definecolor{earth}{HTML}{0072B2}
+\definecolor{vermil}{HTML}{D55E00}
+\definecolor{ok}{HTML}{0B7A5A}
+\definecolor{panel}{HTML}{F1F3F8}
+\definecolor{rule}{HTML}{D5DAE6}
+\definecolor{muted}{HTML}{5A6482}
+\color{ink}
+
+% ---------------------------------------------------------------- text
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5.5pt plus 1pt}
+\linespread{1.08}
+\setlist{nosep,leftmargin=1.4em,topsep=3pt}
+\setlist[itemize]{label={\color{sun}\small$\bullet$}}
+\renewcommand{\arraystretch}{1.22}
+\newcommand{\vs}{\mathbf{v}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\lead}[1]{{\sffamily\bfseries #1}\enspace}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\setcounter{secnumdepth}{2}
+
+% ---------------------------------------------------------------- headings
+\titleformat{\section}{\headfont\fontsize{15.5}{19}\selectfont\color{ink}}{\color{sun}\thesection}{0.55em}{}
+\titlespacing*{\section}{0pt}{20pt}{6pt}
+\titleformat{\subsection}{\sffamily\bfseries\fontsize{11.5}{14}\selectfont\color{ink}}{\color{muted}\thesubsection}{0.55em}{}
+\titlespacing*{\subsection}{0pt}{12pt}{3pt}
+
+% A part opener: a dark band, and an entry at the top level of the PDF outline.
+\newcommand{\docpart}[3]{%
+  \clearpage
+  \phantomsection\addcontentsline{toc}{part}{#1: #2}%
+  \begin{tcolorbox}[enhanced,colback=ink,colframe=ink,arc=0pt,boxrule=0pt,left=14pt,right=14pt,top=12pt,bottom=12pt,
+    underlay={\fill[sun] (frame.north west) rectangle ([xshift=4pt]frame.south west);}]
+  {\sffamily\footnotesize\color{sun}\MakeUppercase{#1}}\par\vspace{2pt}
+  {\headfont\fontsize{20}{24}\selectfont\color{white}#2}\par\vspace{4pt}
+  {\sffamily\small\color{white!82!ink}#3}
+  \end{tcolorbox}\vspace{4pt}}
+
+% ---------------------------------------------------------------- boxes
+\tcbset{lzbase/.style={enhanced,breakable,arc=0pt,boxrule=0pt,left=9pt,right=9pt,top=6pt,bottom=6pt,
+  fonttitle=\sffamily\bfseries\small,detach title,before upper={\tcbtitle\par\vspace{2pt}}}}
+\newtcolorbox{example}[1][Worked example]{lzbase,colback=earth!6,coltitle=earth!80!black,title={#1},
+  borderline west={2.5pt}{0pt}{earth}}
+\newtcolorbox{aside}[1]{lzbase,colback=panel,coltitle=ink,title={#1},borderline west={2.5pt}{0pt}{sun}}
+\newtcolorbox{tile}[2]{enhanced,arc=0pt,boxrule=0pt,colback=panel,left=8pt,right=8pt,top=6pt,bottom=7pt,
+  borderline north={2pt}{0pt}{#1},fontupper=\small,before upper={{\sffamily\bfseries\small\color{#1!75!ink}#2}\par\vspace{2pt}},equal height group=glance}
+\newcommand{\reproduce}[1]{\par\smallskip\noindent\begin{tcolorbox}[enhanced,arc=0pt,boxrule=0pt,colback=white,left=8pt,right=6pt,top=2pt,bottom=2pt,
+  borderline west={2pt}{0pt}{vermil}]\sffamily\footnotesize\textbf{\color{vermil}Reproduce it (source repository).} #1\end{tcolorbox}}
+
+% ---------------------------------------------------------------- tables
+\newenvironment{lztable}{\par\smallskip\begin{center}\sffamily\footnotesize\renewcommand{\arraystretch}{1.3}}{\end{center}\smallskip}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% ---------------------------------------------------------------- page style
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\sffamily\scriptsize\color{muted}\doctitle}
+\fancyhead[R]{\sffamily\scriptsize\color{muted}\leftmark}
+\fancyfoot[C]{\sffamily\footnotesize\color{muted}\thepage}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\sffamily\footnotesize\color{muted}\thepage}}
+
+\usepackage[colorlinks=true,linkcolor=sky,urlcolor=sky,citecolor=sky,bookmarksnumbered=true,bookmarksopen=true,
+  bookmarksopenlevel=1,pdfpagemode=UseOutlines,pdfdisplaydoctitle=true,
+  pdftitle={\doctitle},pdfauthor={Team LunaZen},
+  pdfsubject={\docsubject},
+  pdfkeywords={Moon, south pole, landing sites, illumination, Earth visibility, LOLA, SPICE, NASA Space Apps}]{hyperref}
+\usepackage{bookmark}
+\usepackage{xurl}
+% The two addresses used in the guide. Replace the placeholders (same values as web/app/site-config.js), then rebuild.
+\urldef{\repourl}\url{https://github.com/lunazen-spaceapp/lunazen-v1}
+\urldef{\appurl}\url{https://lunazen-v1.vercel.app}
+\urlstyle{sf}
+
