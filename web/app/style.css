@@ -1584,3 +1584,162 @@ a.contact-row:hover { color: var(--accent); }
 @media (max-width: 599px) { .moon-corner { bottom: 40px; font-size: 11px; } }
 
 
+/* ---- Explorer: scenario panel, view tabs, the view, playback bar, snapshot, "This moment", the Visibility Timeline and the Plan panel. ---- */
+.exp { padding-block: 14px 64px; gap: 16px; }
+.exp .mp-head { gap: 10px; padding-bottom: 0; }
+.exp .mp-seg button { min-height: 44px; padding: 0 14px; }
+.mp-seg button[aria-selected="true"] { background: var(--text); color: var(--bg); }
+.mp-seg.tint button[aria-pressed="true"] { background: rgba(227, 163, 59, 0.14); color: var(--moon-accent); }
+.exp-scenario { position: relative; margin: 0; padding: 14px 20px; border: 1px solid var(--exp-line); background: var(--exp-panel); display: flex; flex-direction: column; gap: 6px; }
+.exp .lz-sentence { margin: 0; font-size: 22px; line-height: 1.5; color: var(--text); }
+.exp .lz-tok { color: var(--moon-accent); border-bottom: 1px solid #b9781a; padding: 2px 0; }
+.exp-where { margin: 0; max-width: none; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 13px; color: var(--text-3); font-variant-numeric: tabular-nums; }
+.exp-where .site-info { max-width: none; flex: none; }
+.exp-where .map-link { color: var(--text-2); font-weight: 400; text-underline-offset: 3px; }
+.exp-note { margin: 0; max-width: none; font-size: 13px; line-height: 1.5; color: var(--text-3); }
+.exp-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+.exp-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.exp-controls[hidden] { display: none; }
+.exp-width { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-2); }
+.exp-width[hidden] { display: none; }
+.exp select, .exp .exp-moment input { min-height: 44px; padding: 0 10px; border: 1px solid var(--line-2); border-radius: 0; background: var(--bg); color: var(--text-strong); font: inherit; font-size: 14px; }
+.exp-cams { gap: 8px; }
+.exp-cams button { min-height: 44px; padding: 0 14px; border: 1px solid var(--line-2); border-radius: 0; background: none; color: var(--text); font: 500 12px/1 var(--f-head); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; }
+.exp-cams button[aria-pressed="true"] { border-color: var(--accent-line); color: var(--moon-accent); }
+.exp-assume { padding: 6px 10px; border: 1px solid var(--exp-line); background: var(--exp-panel); gap: 8px 12px; }
+.exp-assume-h { font: 500 11px/1 var(--f-head); letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-3); }
+.exp-assume label { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-2); }
+.exp-assume select { min-height: 40px; padding: 0 6px; font-size: 13px; }
+.exp-live { display: flex; flex-direction: column; gap: 12px; }
+.exp-live[hidden] { display: none; }
+.exp-stage { position: relative; height: 460px; border: 1px solid var(--exp-line); background: #05070a; overflow: hidden; }
+.exp-stage #panorama { display: block; width: 100%; height: 100%; margin: 0; }
+.exp-stage #panorama[hidden] { display: none; }
+.exp-stage .view3d { position: relative; height: 100%; margin: 0; }
+.exp-stage .view3d[hidden] { display: none; }
+.exp-stage .view3d-stage { height: 100%; }
+.exp-stage #terrain3d, .exp-stage #terrain3d-overlay { height: 100%; }
+.exp-stage #view3d-msg { position: absolute; left: 12px; top: 12px; z-index: 2; margin: 0; }
+.exp-3dnote { position: absolute; right: 12px; bottom: 12px; margin: 0; max-width: none; padding: 8px 12px; background: rgba(11, 13, 18, 0.85); font-size: 12px; line-height: 1.6; color: #c9ced7; pointer-events: none; }
+.exp-3dnote .dot-sun { color: #e3a33b; }
+.exp-3dnote .dot-earth { color: #7fbdf0; }
+.exp-swipe { display: none; margin: -4px 0 0; max-width: none; font-size: 12px; color: var(--text-faint); }
+.exp-play { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; padding: 10px 14px; border: 1px solid var(--exp-line); background: var(--exp-panel); }
+.exp-btn { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-height: 44px; min-width: 44px; padding: 0 14px; border: 1px solid var(--line-2); border-radius: 0; background: none; color: var(--text); font: 500 12px/1 var(--f-head); letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; white-space: pre; }
+.exp-btn:hover { border-color: var(--accent-line); }
+.exp-btn.fill { min-width: 96px; border-color: var(--accent-fill); background: var(--accent-fill); color: var(--on-accent); }
+.exp-btn.small { min-height: 40px; padding: 0 14px; }
+.exp-divider { width: 1px; height: 28px; background: var(--exp-line); }
+.exp-moment { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; color: var(--text-3); }
+.exp-dayof { font-size: 13px; color: var(--text-faint); }
+.exp-snap { border: 1px solid var(--exp-line); background: var(--exp-panel); }
+.exp-snap-head { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 12px; padding: 0 16px; border: 0; border-radius: 0; background: none; color: var(--text); text-align: left; cursor: pointer; }
+.exp-snap-head svg { flex: none; color: var(--moon-accent); transition: transform 0.12s; }
+.exp-snap-head[aria-expanded="true"] svg { transform: rotate(90deg); }
+.exp-snap-head .t { font: 500 12px/1.3 var(--f-head); letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-strong); }
+.exp-snap-head .s { font-size: 13px; color: var(--text-faint); }
+.exp-snap-body { display: flex; flex-direction: column; gap: 6px; padding: 0 16px 14px; }
+.exp-snap-body[hidden] { display: none; }
+.exp-snap-body .event-chart { box-sizing: border-box; height: 170px; margin: 0; border: 1px solid var(--exp-line); background: #05070a; }
+.exp-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--text-3); }
+.exp-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.exp-legend .sw { display: inline-block; width: 14px; height: 7px; }
+.exp-legend .sw.sun { background: var(--exp-sun); }
+.exp-legend .sw.earth { background: var(--exp-earth); }
+.exp-legend .sw.dsn { background: #3fb58c; }
+.exp-legend .sw.part { background: var(--exp-earth); opacity: 0.45; }
+.exp-legend .cursor { display: inline-block; width: 2px; height: 11px; background: #f26b3a; }
+.exp-moment-panel { border: 1px solid var(--exp-line); background: var(--exp-panel); padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 12px; }
+.exp-moment-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.exp-h { margin: 0; font: 500 12px/1.4 var(--f-head); letter-spacing: 0.2em; text-transform: uppercase; color: var(--moon-accent); }
+.exp-h-row { display: flex; align-items: center; gap: 10px; }
+.exp-dsn { display: inline-flex; align-items: center; gap: 8px; min-height: 30px; padding: 0 12px; border: 1px solid var(--line-2); font-size: 13px; color: var(--text-2); }
+.exp-dsn .dot, .exp-card .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--text-faint); background: none; }
+.exp-dsn.on .dot { background: #3fb58c; border-color: #3fb58c; }
+.exp-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.exp-card { border: 1px solid var(--exp-line); border-top: 3px solid var(--exp-sun); background: var(--exp-card); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.exp-card.earth { border-top-color: var(--exp-earth); }
+.exp-card .status { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-2); }
+.exp-card.sun .dot.on { background: var(--exp-sun); border-color: var(--exp-sun); }
+.exp-card.earth .dot { border-color: var(--exp-earth); }
+.exp-card.earth .dot.on { background: var(--exp-earth); }
+.exp-card .next { font: 500 28px/1.2 var(--f-head); color: var(--text-strong); }
+.exp-card .clear { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-3); font-variant-numeric: tabular-nums; }
+.exp-period { display: flex; flex-direction: column; gap: 22px; }
+.exp-period[hidden] { display: none; }
+.exp-block { display: flex; flex-direction: column; gap: 10px; }
+.exp-period .event-chart { box-sizing: border-box; height: 170px; margin: 0; border: 1px solid var(--exp-line); background: #05070a; }
+.exp-period .clearance-chart { height: 200px; }
+/* the three groups side by side, one row of cards each, sized by how many cards they hold */
+.exp-groups { display: flex; flex-wrap: wrap; gap: 14px 16px; align-items: stretch; }
+.exp-group { flex: var(--n, 1) 1 max(190px, calc(var(--n, 1) * 128px)); min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.exp-figs { flex: 1; display: grid; grid-template-columns: repeat(auto-fit, minmax(116px, 1fr)); gap: 8px; }
+.exp-fig { border: 1px solid var(--exp-line); background: var(--exp-card); padding: 9px 11px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.exp-fig .k { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 12px; line-height: 1.3; color: var(--text-2); }
+.exp-fig .v { font: 500 22px/1.2 var(--f-head); color: var(--text-strong); font-variant-numeric: tabular-nums; }
+.exp-fig .s { font-size: 11.5px; line-height: 1.35; color: var(--text-3); }
+.exp-notes { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.55; color: var(--text-2); }
+.exp-win-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.exp-win-btns { display: flex; gap: 8px; }
+.exp-win-scroll { overflow-x: auto; border: 1px solid var(--exp-line); }
+#windows.exp-table { display: table; width: 100%; min-width: 560px; max-height: none; overflow: visible; border-collapse: collapse; font-size: 14px; color: var(--text); }
+#windows.exp-table th, #windows.exp-table td { padding: 10px 14px; text-align: left; border: 0; border-top: 1px solid var(--exp-line); font-variant-numeric: tabular-nums; }
+#windows.exp-table thead th { position: static; background: var(--tbl-head); color: var(--tbl-head-text); border-top: 0; font: 500 12px/1.4 var(--f-head); letter-spacing: 0.2em; text-transform: uppercase; }
+#windows.exp-table th.r, #windows.exp-table td.r { text-align: right; }
+#windows.exp-table td .dot { display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; }
+#windows.exp-table tbody tr[data-k] { cursor: pointer; }
+.exp-plan { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 16px 20px; border: 1px solid var(--exp-line); background: var(--exp-panel); font-size: 15px; color: var(--text-2); }
+.exp-plan[hidden] { display: none; }
+.exp-plan-btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: var(--accent-fill); color: var(--on-accent); font: 500 12px/1 var(--f-head); letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; }
+.exp-plan-btn:hover { filter: brightness(1.08); color: var(--on-accent); }
+
+/* the spot picker under the sentence */
+#pop[data-kind="spot-list"] { width: 340px; max-width: calc(100vw - 16px); max-height: 380px; padding: 0; overflow-y: auto; background: var(--bg-2); border-color: var(--line-2); }
+.spotlist { display: flex; flex-direction: column; }
+.spot-group { margin: 0; padding: 12px 16px 6px; border-top: 1px solid var(--mp-rule); font: 500 11px/1.3 var(--f-head); letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-3); max-width: none; }
+.spot-group:first-child { border-top: 0; }
+.spot-group.mine { color: var(--saved-mark); }
+.spot-opt { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 40px; padding: 0 16px; border: 0; border-left: 3px solid transparent; border-radius: 0; background: none; color: var(--text); font: inherit; font-size: 14px; text-align: left; cursor: pointer; }
+.spot-opt:hover { background: var(--mp-sel); }
+.spot-opt.sel { background: var(--mp-sel); border-left-color: var(--accent-line); }
+.spot-opt .name { flex: 1; min-width: 0; }
+.spot-opt .site { color: var(--text-3); }
+.spot-opt .tick { color: var(--moon-accent); }
+.spot-group.mine + .spot-opt, .spot-opt:has(svg) { min-height: 44px; color: var(--text); }
+.spot-opt svg { flex: none; color: var(--saved-mark); }
+
+/* How to use the Explorer */
+#exp-help section + section { margin-top: 14px; }
+#exp-help h3 { margin: 0 0 6px; font: 500 13px/1.4 var(--f-head); letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+#exp-help h4 { margin: 10px 0 4px; font: 500 12px/1.4 var(--f-head); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-strong); }
+#exp-help p, #exp-help ul { margin: 0; max-width: none; font-size: 15px; line-height: 1.6; color: var(--text-2); }
+#exp-help ul { padding-left: 18px; }
+#exp-help details { border-top: 1px solid var(--exp-line); padding: 10px 0; }
+#exp-help details:last-child { border-bottom: 1px solid var(--exp-line); }
+#exp-help summary { min-height: 28px; font-size: 15px; color: var(--text-strong); cursor: pointer; }
+#exp-help details p { margin-top: 8px; font-size: 14px; }
+#exp-help .video { margin-top: 8px; }
+#exp-help .video a { font-size: 14px; color: var(--accent); }
+
+@media (max-width: 700px) {
+  .exp .lz-sentence, .exp .lz-sentence .lz-tok { font-size: 18px; }
+  .exp-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+  .exp-tabs button { padding: 0 6px; font-size: 11px; letter-spacing: 0.08em; line-height: 1.25; white-space: normal; }
+  .exp-controls:not([hidden]), .exp-seg { width: 100%; }
+  .exp-seg { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .exp-seg button { padding: 0 6px; font-size: 11px; letter-spacing: 0.08em; }
+  .exp-stage { height: auto; overflow-x: auto; }
+  .exp-stage #panorama { width: 760px; min-width: 760px; height: 340px; }
+  .exp-stage .view3d { height: 340px; }
+  .exp-swipe { display: block; }
+  .exp-btn .long { display: none; }
+  .exp-btn.fill { flex: 1 1 96px; }
+  .exp-divider { display: none; }
+  .exp-moment { flex: 1 1 100%; }
+  .exp-snap-head { flex-wrap: wrap; padding: 6px 16px; }
+  .exp-card .next { font-size: 24px; }
+}
+
+/* The charts of the Explorer stay dark in both themes (their canvases read these) */
+.exp #snap-chart, .plan #mission-chart, .plan .lz-card .event-chart, .exp #event-chart, .exp #clearance-chart { --sky: #0f1422; --muted: #c9ced7; --fg: #ffffff; --grid: #242b3d; --zero: #4b546a; --sun: #f2b233; --earth: #45a8e6; --link-band: #4cc79d; --bad: #ff9e6e; }
+
