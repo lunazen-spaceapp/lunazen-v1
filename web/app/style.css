@@ -712,7 +712,6 @@ table.rank .status-chip { padding: 1px 8px; font-size: 12px; }
 /* Wide screens: the map beside the controls, the two skies side by side below the time bar. */
 
 .workspace > .dock { min-width: 0; }
-.transport input[type="range"] { flex: 1 1 160px; min-width: 0; }
 
 #site-info { white-space: normal; overflow: visible; text-overflow: clip; }
 
@@ -1632,6 +1631,7 @@ a.contact-row:hover { color: var(--accent); }
 .exp-divider { width: 1px; height: 28px; background: var(--exp-line); }
 .exp-moment { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 13px; color: var(--text-3); }
 .exp-dayof { font-size: 13px; color: var(--text-faint); }
+.exp-slider { flex: 1 1 220px; min-width: 120px; min-height: 28px; accent-color: var(--accent-line); }
 .exp-snap { border: 1px solid var(--exp-line); background: var(--exp-panel); }
 .exp-snap-head { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 12px; padding: 0 16px; border: 0; border-radius: 0; background: none; color: var(--text); text-align: left; cursor: pointer; }
 .exp-snap-head svg { flex: none; color: var(--moon-accent); transition: transform 0.12s; }
@@ -1736,6 +1736,7 @@ a.contact-row:hover { color: var(--accent); }
   .exp-btn.fill { flex: 1 1 96px; }
   .exp-divider { display: none; }
   .exp-moment { flex: 1 1 100%; }
+  .exp-slider { flex: 1 1 100%; }
   .exp-snap-head { flex-wrap: wrap; padding: 6px 16px; }
   .exp-card .next { font-size: 24px; }
 }
