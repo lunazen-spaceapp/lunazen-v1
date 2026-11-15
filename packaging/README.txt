@@ -4,7 +4,7 @@ LunaZen Landing Site Navigator: packaged build
 Start here
 ----------
 Live app:        https://lunazen-v1.vercel.app
-Overview video:  https://youtu.be/3MQQRflfRCE
+Overview video:  https://youtu.be/9aBHnTUXZ4o
 The guide:       lunazen_guide.pdf (the user guide; page 2 is a one-page overview)
 Video series:    https://www.youtube.com/playlist?list=PLct6-XOWUjH8 (six videos on the south polar sky; they explain the concepts, not the app)
 

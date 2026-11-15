@@ -449,7 +449,7 @@ def test_resources_is_an_accordion_with_computed_figures(page, base):
     assert page.locator("#playlist li").count() == 6 and "Exploring the Lunar South Pole: Why Everyone Is Going, and Why It Is Hard to Land" in page.locator("#playlist li").first.text_content()
     assert [a.get_attribute("href") for a in page.locator("#playlist a").all()] == ["https://youtu.be/" + v for v in ("3kn46h4qcFw", "L2yvlqkywV4", "J5H6E7JQpmQ", "Zk7FiL-1gY8", "XrTkE3Rt2X8", "uFc0DskIiX4")]
     assert page.locator("#playlist-link").get_attribute("href") == "https://www.youtube.com/playlist?list=PLct6-XOWUjH8" and page.locator("#playlist-link").get_attribute("target") == "_blank"
-    assert page.locator("#overview-link").get_attribute("href") == "https://youtu.be/3MQQRflfRCE" and page.locator("#overview-watch").get_attribute("href") == "https://youtu.be/3MQQRflfRCE"
+    assert page.locator("#overview-link").get_attribute("href") == "https://youtu.be/9aBHnTUXZ4o" and page.locator("#overview-watch").get_attribute("href") == "https://youtu.be/9aBHnTUXZ4o"
     assert page.locator("#overview-link").is_visible() and page.locator("#overview-box").is_hidden()
     assert page.locator("footer.site-footer").text_content().strip() == FOOTER
 

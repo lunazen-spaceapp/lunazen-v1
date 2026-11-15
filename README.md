@@ -5,7 +5,7 @@
 At the lunar south pole the Sun never climbs more than a few degrees, so a ridge far away can decide whether a lander has light and a line to Earth. LunaZen shows, for a spot and a date, when the Sun and Earth are above the real terrain horizon and how long the dark lasts, and it helps you choose where and when to land. It runs entirely in your browser. A NASA Space Apps 2026 project.
 
 - **App:** https://lunazen-v1.vercel.app
-- **Overview video:** https://youtu.be/3MQQRflfRCE
+- **Overview video:** https://youtu.be/9aBHnTUXZ4o
 - **User Guide:** [lunazen_guide.pdf](docs/learn/lunazen_guide.pdf), 10 pages; page 2 is a one-page overview
 - **Videos:** https://www.youtube.com/playlist?list=PLct6-XOWUjH8 (a six-part series on the south polar sky)
 

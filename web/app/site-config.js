@@ -3,7 +3,7 @@
 // full https:// address. The README, packaging/README.txt and the guide's \repourl and \appurl carry the same addresses.
 export const REPO_URL = "https://github.com/lunazen-spaceapp/lunazen-v1"; // the public source repository
 export const APP_URL = "https://lunazen-v1.vercel.app"; // the deployed app (Vercel production)
-export const OVERVIEW_URL = "https://youtu.be/3MQQRflfRCE";  // the 3-minute overview video
+export const OVERVIEW_URL = "https://youtu.be/9aBHnTUXZ4o";  // the 3-minute overview video
 export const PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLct6-XOWUjH8"; // the six-part video series
 export const EXPLORER_VIDEO_URL = "https://youtu.be/L2yvlqkywV4"; // "The Sun and Earth in the South Polar Sky"
 export const CONTACT_EMAIL = "lunazen.spaceapp@gmail.com";          // the address on the Contact page; the row stays visible while it is a placeholder
